@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprRocket",
-    "path": "sprites/sprRocket/sprRocket.yy",
+    "name": "sRocket",
+    "path": "sprites/sRocket/sRocket.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,6 +25,7 @@
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"oRocket","path":"objects/oRocket/oRocket.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oRocket","path":"objects/oRocket/oRocket.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},"parent":{"name":"oRocket","path":"objects/oRocket/oRocket.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"parent":{"name":"oRocket","path":"objects/oRocket/oRocket.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -1,7 +1,11 @@
 /// @description Open
-//opened = true;
+
+if (place_meeting(x, y, oPlayer)){
+opened = true;
 
 // choose item
 chooseRandomItem(containerType);
 
-//instance_destroy();
+instance_destroy();
+
+}

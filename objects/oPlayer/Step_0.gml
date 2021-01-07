@@ -58,25 +58,19 @@ if (mouse_check_button(mb_left) && currentBulletCooldown = 0) {
 	temp = 0;
 	
 	while (temp = 0) {
-	target = collision_line(x, y, lerp(x, mouse_x, xyAdjust), lerp(y, mouse_y, xyAdjust), oBlock, false, true);
+	target = collision_line(x, y, lerp(x, mouse_x, xyAdjust), lerp(y, mouse_y, xyAdjust), oEnemy, false, true);
 	
 	if (target != noone) {
-	with (target) {
-		instance_destroy();
-		
+		damage(target, global.playerVariables[1, 7]); 
+			
 		oPlayer.temp++;
 	}
-	}
+	
 	xyAdjust += 0.1;
 	
 	if (xyAdjust >= 1){
 		temp++;
 	}
-	}
-
-	// reset cooldown
-	if (currentBulletCooldown <= 0) {
-		currentBulletCooldown = bulletCooldown;
 	}
 }
 
