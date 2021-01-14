@@ -1,7 +1,6 @@
 {
   "resources": [
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":1,},
-    {"id":{"name":"Damage","path":"scripts/Damage/Damage.yy",},"order":4,},
     {"id":{"name":"chooseRandomItem","path":"scripts/chooseRandomItem/chooseRandomItem.yy",},"order":0,},
     {"id":{"name":"sDummy","path":"sprites/sDummy/sDummy.yy",},"order":3,},
     {"id":{"name":"CommonItems","path":"scripts/CommonItems/CommonItems.yy",},"order":1,},
@@ -12,6 +11,7 @@
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":0,},
     {"id":{"name":"RareItems","path":"scripts/RareItems/RareItems.yy",},"order":2,},
     {"id":{"name":"oContainer","path":"objects/oContainer/oContainer.yy",},"order":2,},
+    {"id":{"name":"Initialize","path":"scripts/Initialize/Initialize.yy",},"order":5,},
     {"id":{"name":"oRocket","path":"objects/oRocket/oRocket.yy",},"order":3,},
     {"id":{"name":"spawnItem","path":"scripts/spawnItem/spawnItem.yy",},"order":2,},
     {"id":{"name":"oChest","path":"objects/oChest/oChest.yy",},"order":0,},
