@@ -61,8 +61,8 @@ if (mouse_check_button(mb_left) && currentBulletCooldown = 0) {
 	target = collision_line(x, y, lerp(x, mouse_x, xyAdjust), lerp(y, mouse_y, xyAdjust), oEnemy, false, true);
 	
 	if (target != noone) {
-		damage(target, global.playerVariables[1, 7]); 
-			
+		damage(target, bulletDamage); 
+		knockback(target, bulletKnockback, point_direction(x,y,mouse_x,mouse_y));
 		oPlayer.temp++;
 	}
 	

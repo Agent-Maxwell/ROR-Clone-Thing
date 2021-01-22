@@ -4,6 +4,7 @@
     {"id":{"name":"chooseRandomItem","path":"scripts/chooseRandomItem/chooseRandomItem.yy",},"order":0,},
     {"id":{"name":"sDummy","path":"sprites/sDummy/sDummy.yy",},"order":3,},
     {"id":{"name":"CommonItems","path":"scripts/CommonItems/CommonItems.yy",},"order":1,},
+    {"id":{"name":"knockback","path":"scripts/knockback/knockback.yy",},"order":6,},
     {"id":{"name":"sChest","path":"sprites/sChest/sChest.yy",},"order":1,},
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},"order":1,},
     {"id":{"name":"oDummy","path":"objects/oDummy/oDummy.yy",},"order":1,},
