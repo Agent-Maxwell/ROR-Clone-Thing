@@ -9,9 +9,15 @@ var move = rightPressed - leftPressed;
 horizontalSpeed = move * walkSpeed;
 verticalSpeed = verticalSpeed + playerGravity;
 
+// reset jumps
+if (place_meeting(x, y + 1, oBlock)) {
+	jumps = maxJumps;
+}
+
 //jumping
-if (place_meeting(x, y + 1, oBlock)) && (spacePressed){
+if (jumps > 0) && (spacePressed){
 	verticalSpeed = jumpHeight;
+	jumps--;
 }
 
 // horizontal colision

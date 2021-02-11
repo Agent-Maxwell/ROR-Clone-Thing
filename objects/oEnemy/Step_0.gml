@@ -22,6 +22,10 @@ if (horizontalSpeed > 0) {
 }
 
 if (horizontalSpeed < 0) {
+	horizontalSpeed += enemyFriction;
+}
+
+if (horizontalSpeed < 1 && horizontalSpeed > -1) {
 	horizontalSpeed = 0;
 }
 
