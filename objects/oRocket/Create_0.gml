@@ -1,7 +1,7 @@
 // variables
 lifetime = 200;
 rocketSpeed = 4.5;
-damage = 1;
+explosionRadius = global.playerVariables[1, 11];
 
 // set alarm
 //alarm[0] = lifetime;

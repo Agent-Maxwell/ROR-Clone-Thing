@@ -59,24 +59,13 @@ if (currentRocketCooldown <= 0) {
 }
 
 // shoot bullet
-if (mouse_check_button(mb_left) && currentBulletCooldown = 0) {
-	xyAdjust = 0;
-	temp = 0;
-	
-	while (temp = 0) {
-	target = collision_line(x, y, lerp(x, mouse_x, xyAdjust), lerp(y, mouse_y, xyAdjust), oEnemy, false, true);
+if (mouse_check_button(mb_left) && currentBulletCooldown = 0) {	
+		
+	target = collision_line(x, y, mouse_x, mouse_y, oEnemy, true, true);
 	
 	if (target != noone) {
 		damage(target, bulletDamage); 
-		knockback(target, bulletKnockback, point_direction(x,y,mouse_x,mouse_y));
-		oPlayer.temp++;
-	}
-	
-	xyAdjust += 0.1;
-	
-	if (xyAdjust >= 1){
-		temp++;
-	}
+		knockback(target, bulletKnockback);
 	}
 }
 

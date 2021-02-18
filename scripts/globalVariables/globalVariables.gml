@@ -17,7 +17,7 @@ enum itemsenum {
 
 // player variables stored hgere for access in itemscripts
 
-global.playerVariables = array_create(1, 10);
+global.playerVariables = array_create(1, 11);
 
 global.playerVariables[1, 1] = 0.3; //gravity
 global.playerVariables[1, 2] = 3.5; //walkspeed
@@ -27,8 +27,9 @@ global.playerVariables[1, 5] = 30; //rocketcooldown
 global.playerVariables[1, 6] = 30; //bulletcooldown
 global.playerVariables[1, 7] = 5; //bulletdamage
 global.playerVariables[1, 8] = 20; //rocketdamage
-global.playerVariables[1, 9] = 1; //bulletknockback
+global.playerVariables[1, 9] = .1; //bulletknockback
 global.playerVariables[1, 10] = 10; //rocketknockback
+global.playerVariables[1, 11] = 30; //rocketexplosionradius
 
 
 // item parent
