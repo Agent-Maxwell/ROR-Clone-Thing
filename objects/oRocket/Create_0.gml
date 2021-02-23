@@ -1,14 +1,13 @@
-// variables
-lifetime = 200;
-rocketSpeed = 4.5;
+// Inherit the parent event
+event_inherited();
+
+//lifetime = 200;
+projSpeed = global.playerVariables[1, 13];
 explosionRadius = global.playerVariables[1, 11];
+projDamage = global.playerVariables[1, 8];
+projKnockback = global.playerVariables[1, 10];
 
-// set alarm
-//alarm[0] = lifetime;
-
-// set direction and angle
-rocketDirection = point_direction(oPlayer.x, oPlayer.y, mouse_x, mouse_y);
-
-direction = rocketDirection;
-image_angle = rocketDirection;
-speed = rocketSpeed;
+direction = projDirection;
+image_angle = projDirection;
+speed = projSpeed;
+image_xscale = -1;

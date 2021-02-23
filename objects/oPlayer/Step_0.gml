@@ -60,14 +60,15 @@ if (currentRocketCooldown <= 0) {
 
 // shoot bullet
 if (mouse_check_button(mb_left) && currentBulletCooldown = 0) {	
-		
-	target = collision_line(x, y, mouse_x, mouse_y, oEnemy, true, true);
 	
-	if (target != noone) {
-		damage(target, bulletDamage); 
-		knockback(target, bulletKnockback);
+	instance_create_layer(x, y, "Instances", oBullet);
+	
+	// reset cooldown
+	if (currentBulletCooldown <= 0){
+		currentBulletCooldown = bulletCooldown;
 	}
 }
+
 
 // lower bullet cooldown
 currentBulletCooldown--;

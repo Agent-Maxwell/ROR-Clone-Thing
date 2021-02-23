@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sRocket",
-    "path": "sprites/sRocket/sRocket.yy",
+    "name": "sBullet",
+    "path": "sprites/sBullet/sBullet.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,7 +24,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oRocket","path":"objects/oRocket/oRocket.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +33,7 @@
     "path": "folders/Player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oRocket",
+  "name": "oBullet",
   "tags": [],
   "resourceType": "GMObject",
 }
