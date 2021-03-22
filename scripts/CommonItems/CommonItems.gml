@@ -5,4 +5,6 @@ function weaponPolish () : Item () constructor {
 	variableToChange = 7;
 	changeAmount = 5;
 	operatorType = "+";
+	amount = 1;
+	description = "Increases damage by 5 per stack.\n\nTotal damage increase:" + (changeAmount*amount);
 }

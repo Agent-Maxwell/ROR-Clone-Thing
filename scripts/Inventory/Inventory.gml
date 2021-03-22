@@ -1,0 +1,1 @@
+global.inventory = ds_list_create();

@@ -17,7 +17,7 @@ enum itemsenum {
 
 // player variables stored hgere for access in itemscripts
 
-global.playerVariables = array_create(1, 3);
+global.playerVariables = array_create(13);
 
 global.playerVariables[1, 1] = 0.3; //gravity
 global.playerVariables[1, 2] = 3.5; //walkspeed
@@ -33,6 +33,7 @@ global.playerVariables[1, 11] = 30; //rocketexplosionradius
 global.playerVariables[1, 12] = 10; //bulletspeed
 global.playerVariables[1, 13] = 4.5; //rocketspeed
 
+
 // item parent
 function Item () constructor {
 	name = "";
@@ -41,6 +42,8 @@ function Item () constructor {
 	variableToChange = -1;
 	changeAmount = -1;
 	operatorType = "";
+	amount = 1;
+	description = "";
 }
 
 function applyGlobalVariables() {
@@ -55,6 +58,6 @@ bulletDamage = global.playerVariables[1, 7];
 rocketDamage = global.playerVariables[1, 8];
 bulletKnockback = global.playerVariables[1, 9];
 rocketKnockback = global.playerVariables[1, 10];
-bulletSpeed = global.playerVariables[1, 12] = 10; 
-rocketSpeed = global.playerVariables[1, 13] = 4.5;
+bulletSpeed = global.playerVariables[1, 12];
+rocketSpeed = global.playerVariables[1, 13];
 }
