@@ -26,7 +26,6 @@ function knockback(victim, knockbackAmount){
 		yAmountToMove*=-1;
 	}
 	
-	show_debug_message(yAmountToMove)
 	victim.horizontalSpeed += xAmountToMove;
 	victim.verticalSpeed += yAmountToMove;
 

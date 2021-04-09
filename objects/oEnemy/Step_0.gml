@@ -39,3 +39,13 @@ if (place_meeting(x, y + verticalSpeed, oBlock)){
 	verticalSpeed = 0;
 }
 y = y + verticalSpeed;
+
+// damage numbers
+if (damaged) {
+	myDamageNumber = instance_create_layer(x, y - 50, "Instances", damageNumber);
+
+	myDamageNumber.numberToWrite = abs(amountDamaged);
+	
+	damaged = false;
+	amountDamaged = 0;
+}

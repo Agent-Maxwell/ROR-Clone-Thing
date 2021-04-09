@@ -6,5 +6,5 @@ function sugarPatch () : Item () constructor {
 	changeAmount = 1;
 	operatorType = "+";
 	amount = 1;
-	description = "Increases walk speed by 1 per stack.\n\nTotal walk speed increase:" + (changeAmount*amount);
+	description = "Increases walk speed by 1 per stack.\n\nTotal walk speed increase:" + string(changeAmount*amount);
 }

@@ -6,5 +6,5 @@ function angelWings () : Item () constructor {
 	changeAmount = 2;
 	operatorType = "+";
 	amount = 1;
-	description = "Increases maximum airjumps by 2 per stack.\n\nTotal airjumps:" + (changeAmount*amount);
+	description = "Increases maximum airjumps by 2 per stack.\n\nTotal airjumps:" + string(changeAmount*amount);
 }
