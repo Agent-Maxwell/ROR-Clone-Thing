@@ -41,37 +41,3 @@ if (place_meeting(x, y + verticalSpeed, oBlock)){
 	verticalSpeed = 0;
 }
 y = y + verticalSpeed;
-
-// shoot rocket
-if (mouse_check_button(mb_right) && currentRocketCooldown = 0) {
-	instance_create_layer(x, y, "Instances", oRocket);
-	
-	// reset cooldown
-	if (currentRocketCooldown <= 0){
-		currentRocketCooldown = rocketCooldown;
-	}
-}
-
-// lower rocket cooldown
-currentRocketCooldown--;
-if (currentRocketCooldown <= 0) {
-	currentRocketCooldown = 0;
-}
-
-// shoot bullet
-if (mouse_check_button(mb_left) && currentBulletCooldown = 0) {	
-	
-	instance_create_layer(x, y, "Instances", oBullet);
-	
-	// reset cooldown
-	if (currentBulletCooldown <= 0){
-		currentBulletCooldown = bulletCooldown;
-	}
-}
-
-
-// lower bullet cooldown
-currentBulletCooldown--;
-if (currentBulletCooldown <= 0) {
-	currentBulletCooldown = 0;
-}

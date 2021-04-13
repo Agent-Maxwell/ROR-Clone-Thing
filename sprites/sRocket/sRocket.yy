@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3c38baef-b39b-482f-8174-57485efaf13b","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Player.yy",
+    "name": "Projectiles",
+    "path": "folders/Projectiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "sRocket",

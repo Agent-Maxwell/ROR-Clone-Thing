@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e6c86655-a8a2-4a4c-a26a-de57c3a11178","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Player.yy",
+    "name": "Projectiles",
+    "path": "folders/Projectiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBullet",

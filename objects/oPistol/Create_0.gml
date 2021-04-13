@@ -1,16 +1,19 @@
+// Inherit the parent event
+event_inherited();
+
 // weapon variables
-weaponName = "";
-weaponAmmotype = "";
+weaponName = "Pistol";
+weaponAmmotype = "Bullet";
 
 // projectile variables
-projectileSpeed = 0;
+projectileSpeed = 10;
 projectileKnockback = 0;
 projectileLifetime = -1;
 projectileExplosionRadius = 0;
-projectileSprite = 0;
-projectileBaseDamage = 0;
+projectileSprite = sBullet;
+projectileBaseDamage = 5;
 projectileDamage = projectileBaseDamage;
 
 // shoot cooldown variables
 canShoot = true;
-weaponCooldown = 0;
+weaponCooldown = 30;
