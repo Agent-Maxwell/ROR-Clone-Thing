@@ -12,10 +12,11 @@ verticalSpeed = verticalSpeed + playerGravity;
 // reset jumps
 if (place_meeting(x, y + 1, oBlock)) {
 	jumps = maxJumps;
+	show_debug_message(jumps);
 }
 
 //jumping
-if (jumps > 0) && (spacePressed){
+if (jumps > 0 && spacePressed){
 	verticalSpeed = jumpHeight;
 	jumps--;
 }
@@ -41,3 +42,10 @@ if (place_meeting(x, y + verticalSpeed, oBlock)){
 	verticalSpeed = 0;
 }
 y = y + verticalSpeed;
+
+// switch weapons
+if (mouse_wheel_up()) {
+	
+} else if (mouse_wheel_down()) {
+	
+}

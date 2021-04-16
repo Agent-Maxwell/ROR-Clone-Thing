@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"sAngelWings","path":"sprites/sAngelWings/sAngelWings.yy",},"order":3,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":1,},
+    {"id":{"name":"oRocketLauncher","path":"objects/oRocketLauncher/oRocketLauncher.yy",},"order":4,},
     {"id":{"name":"chooseRandomItem","path":"scripts/chooseRandomItem/chooseRandomItem.yy",},"order":0,},
     {"id":{"name":"sDummy","path":"sprites/sDummy/sDummy.yy",},"order":3,},
     {"id":{"name":"CommonItems","path":"scripts/CommonItems/CommonItems.yy",},"order":1,},
@@ -15,6 +16,7 @@
     {"id":{"name":"Inventory","path":"scripts/Inventory/Inventory.yy",},"order":8,},
     {"id":{"name":"RareItems","path":"scripts/RareItems/RareItems.yy",},"order":2,},
     {"id":{"name":"oContainer","path":"objects/oContainer/oContainer.yy",},"order":2,},
+    {"id":{"name":"sRocketLauncher","path":"sprites/sRocketLauncher/sRocketLauncher.yy",},"order":3,},
     {"id":{"name":"Initialize","path":"scripts/Initialize/Initialize.yy",},"order":5,},
     {"id":{"name":"oProjectile","path":"objects/oProjectile/oProjectile.yy",},"order":0,},
     {"id":{"name":"Shoot","path":"scripts/Shoot/Shoot.yy",},"order":9,},
@@ -32,6 +34,7 @@
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},"order":1,},
     {"id":{"name":"sRocket","path":"sprites/sRocket/sRocket.yy",},"order":2,},
     {"id":{"name":"ItemScripts","path":"scripts/ItemScripts/ItemScripts.yy",},"order":3,},
+    {"id":{"name":"ChangeWeapon","path":"scripts/ChangeWeapon/ChangeWeapon.yy",},"order":10,},
     {"id":{"name":"UncommonItems","path":"scripts/UncommonItems/UncommonItems.yy",},"order":0,},
     {"id":{"name":"oPistol","path":"objects/oPistol/oPistol.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":1,},

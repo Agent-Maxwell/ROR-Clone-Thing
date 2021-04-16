@@ -8,6 +8,9 @@ global.items[1, 1] = itemsenum.weaponPolish;
 global.items[2, 1] = itemsenum.sugarPatch;
 global.items[3, 1] = itemsenum.angelWings;
 
+global.playerWeapons = array_create(2);
+global.playerWeapons[1] = oPistol;
+global.playerWeapons[2] = oRocketLauncher;
 
 enum itemsenum {
 	weaponPolish,
@@ -40,12 +43,4 @@ function Item () constructor {
 	operatorType = "";
 	amount = 1;
 	description = "";
-}
-
-function applyGlobalVariables() {
-playerGravity = global.playerVariables[1, 1];
-walkSpeed = global.playerVariables[1, 2];
-jumpHeight = global.playerVariables[1, 3];
-maxJumps = global.playerVariables[1, 4];
-jumps = maxJumps;
 }
