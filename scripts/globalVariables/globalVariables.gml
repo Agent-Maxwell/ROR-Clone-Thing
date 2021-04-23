@@ -9,8 +9,11 @@ global.items[2, 1] = itemsenum.sugarPatch;
 global.items[3, 1] = itemsenum.angelWings;
 
 global.playerWeapons = array_create(2);
+global.playerWeapons[0] = noone;
 global.playerWeapons[1] = oPistol;
+//global.playerWeapons[1, 1] = true;
 global.playerWeapons[2] = oRocketLauncher;
+//global.playerWeapons[2, 2] = false;
 
 enum itemsenum {
 	weaponPolish,
@@ -18,7 +21,7 @@ enum itemsenum {
 	angelWings,
 }
 
-// player variables stored hgere for access in itemscripts
+// player variables stored here for access in itemscripts
 
 global.playerVariables = array_create(13);
 
@@ -26,11 +29,6 @@ global.playerVariables[1, 1] = 0.3; //gravity
 global.playerVariables[1, 2] = 3.5; //walkspeed
 global.playerVariables[1, 3] = -7; //jumpheight
 global.playerVariables[1, 4] = 1; //maxjumps
-global.playerVariables[1, 5] = 30; //rocketcooldown
-global.playerVariables[1, 8] = 20; //rocketdamage
-global.playerVariables[1, 10] = 10; //rocketknockback
-global.playerVariables[1, 11] = 30; //rocketexplosionradius
-global.playerVariables[1, 13] = 4.5; //rocketspeed
 
 
 // item parent
