@@ -9,11 +9,11 @@ global.items[2, 1] = itemsenum.sugarPatch;
 global.items[3, 1] = itemsenum.angelWings;
 
 global.playerWeapons = array_create(2);
-global.playerWeapons[0] = noone;
-global.playerWeapons[1] = oPistol;
-//global.playerWeapons[1, 1] = true;
-global.playerWeapons[2] = oRocketLauncher;
-//global.playerWeapons[2, 2] = false;
+global.playerWeapons[0, 0] = noone;
+global.playerWeapons[1, 0] = oPistol;
+global.playerWeapons[1, 1] = true;
+global.playerWeapons[2, 0] = oRocketLauncher;
+global.playerWeapons[2, 1] = true;
 
 enum itemsenum {
 	weaponPolish,

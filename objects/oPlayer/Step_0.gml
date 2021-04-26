@@ -12,7 +12,6 @@ verticalSpeed = verticalSpeed + playerGravity;
 // reset jumps
 if (place_meeting(x, y + 1, oBlock)) {
 	jumps = maxJumps;
-	show_debug_message(jumps);
 }
 
 //jumping
