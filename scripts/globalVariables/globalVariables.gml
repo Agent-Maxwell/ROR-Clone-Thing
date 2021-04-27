@@ -8,7 +8,7 @@ global.items[1, 1] = itemsenum.weaponPolish;
 global.items[2, 1] = itemsenum.sugarPatch;
 global.items[3, 1] = itemsenum.angelWings;
 
-global.playerWeapons = array_create(2);
+global.playerWeapons = array_create(3);
 global.playerWeapons[0, 0] = noone;
 global.playerWeapons[1, 0] = oPistol;
 global.playerWeapons[1, 1] = true;

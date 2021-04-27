@@ -1,3 +1,5 @@
+event_inherited();
+
 // weapon variables
 weaponName = "Rocket Launcher";
 weaponAmmotype = "Rocket";

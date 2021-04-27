@@ -44,7 +44,15 @@ y = y + verticalSpeed;
 
 // switch weapons
 if (mouse_wheel_up()) {
-	ChangeWeapon(true, false);
+	ChangeWeapon(true, false, noone);
 } else if (mouse_wheel_down()) {
-	ChangeWeapon(false, true);
+	ChangeWeapon(false, true, noone);
+}
+
+if (keyboard_check_pressed(ord("1"))) {
+	ChangeWeapon(false, false, 1);
+}
+
+if (keyboard_check_pressed(ord("2"))) {
+	ChangeWeapon(false, false, 2);
 }

@@ -1,4 +1,4 @@
-function ChangeWeapon(up, down){
+function ChangeWeapon(up, down, number){
 	
 	currentListPosition = 1;
 	newListPosition = 1;
@@ -12,21 +12,27 @@ function ChangeWeapon(up, down){
 	
 	//go to next weapon (and make sure we have it)
 	if (up) {
-	newListPosition = currentListPosition + 1;
-	scrollWeaponListUp()
+		newListPosition = currentListPosition + 1;
+		scrollWeaponListUp()
 	} else if (down) {
-	newListPosition = currentListPosition - 1;
-	scrollWeaponListDown()
+		newListPosition = currentListPosition - 1;
+		scrollWeaponListDown()
+	} else {
+		goToSpecificWeapon(number);
 	}
 
-	// create new weapon and destroy the old one unless the new one is same as old
-	if (instance_exists(oWeapon) && !instance_exists(global.playerWeapons[newListPosition, 0])) {
-		instance_destroy(oWeapon);		
+	// make the weapon we are switching to active and visible
+	with(global.playerWeapons[currentListPosition, 0]) {
+		weaponIsActive = false;
+		image_alpha = 0;
 	}
-	if (!instance_exists(global.playerWeapons[newListPosition, 0])) {
-		currentWeapon = global.playerWeapons[newListPosition, 0];
-		instance_create_layer(x, y, "Weapons", global.playerWeapons[newListPosition, 0]);
+	show_debug_message(currentListPosition)
+	show_debug_message(newListPosition)
+	with(global.playerWeapons[newListPosition, 0]) {
+		weaponIsActive = true;
+		image_alpha = 1;
 	}
+	currentWeapon = global.playerWeapons[newListPosition, 0];
 	
 }
 	
@@ -47,5 +53,11 @@ function scrollWeaponListDown() {
 	if (global.playerWeapons[newListPosition, 1] = false){
 		newListPosition--;
 		scrollWeaponListDown()
+	}
+}
+
+function goToSpecificWeapon(newWeapon) {
+	if (newWeapon != noone && newWeapon <  array_length(global.playerWeapons) && newWeapon > 0 && global.playerWeapons[newWeapon, 1] = true) {
+		newListPosition = newWeapon;
 	}
 }

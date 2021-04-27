@@ -1,6 +1,10 @@
+event_inherited();
+
 // weapon variables
 weaponName = "Pistol";
 weaponAmmotype = "Bullet";
+weaponIsActive = true;
+image_alpha = 1;
 
 // projectile variables
 maxProjectileSpeed = 10;
