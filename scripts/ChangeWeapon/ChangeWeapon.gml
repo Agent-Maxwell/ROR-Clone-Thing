@@ -34,6 +34,10 @@ function ChangeWeapon(up, down, number){
 	}
 	currentWeapon = global.playerWeapons[newListPosition, 0];
 	
+	if (oGame.inventoryOpen) {
+		currentWeapon.weaponIsActive = false;
+	}
+	
 }
 	
 function scrollWeaponListUp() {

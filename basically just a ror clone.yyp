@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"sAngelWings","path":"sprites/sAngelWings/sAngelWings.yy",},"order":3,},
+    {"id":{"name":"sInventorySlot","path":"sprites/sInventorySlot/sInventorySlot.yy",},"order":0,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":1,},
     {"id":{"name":"oRocketLauncher","path":"objects/oRocketLauncher/oRocketLauncher.yy",},"order":4,},
     {"id":{"name":"chooseRandomItem","path":"scripts/chooseRandomItem/chooseRandomItem.yy",},"order":0,},
@@ -36,6 +37,7 @@
     {"id":{"name":"sRocket","path":"sprites/sRocket/sRocket.yy",},"order":2,},
     {"id":{"name":"ItemScripts","path":"scripts/ItemScripts/ItemScripts.yy",},"order":3,},
     {"id":{"name":"ChangeWeapon","path":"scripts/ChangeWeapon/ChangeWeapon.yy",},"order":10,},
+    {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":16,},
     {"id":{"name":"UncommonItems","path":"scripts/UncommonItems/UncommonItems.yy",},"order":0,},
     {"id":{"name":"oPistol","path":"objects/oPistol/oPistol.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":1,},
@@ -67,6 +69,7 @@
     {"folderPath":"folders/Enemies.yy","order":12,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Weapons.yy","order":14,"resourceVersion":"1.0","name":"Weapons","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Projectiles.yy","order":15,"resourceVersion":"1.0","name":"Projectiles","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/GUI.yy","order":17,"resourceVersion":"1.0","name":"GUI","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
