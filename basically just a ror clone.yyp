@@ -13,6 +13,7 @@
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},"order":1,},
     {"id":{"name":"oDummy","path":"objects/oDummy/oDummy.yy",},"order":1,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
+    {"id":{"name":"oInventorySlot","path":"objects/oInventorySlot/oInventorySlot.yy",},"order":1,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":0,},
     {"id":{"name":"Inventory","path":"scripts/Inventory/Inventory.yy",},"order":8,},
     {"id":{"name":"RareItems","path":"scripts/RareItems/RareItems.yy",},"order":2,},

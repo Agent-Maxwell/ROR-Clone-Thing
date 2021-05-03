@@ -1,1 +1,1 @@
-global.inventory = ds_list_create();
+global.inventory = array_create(8);

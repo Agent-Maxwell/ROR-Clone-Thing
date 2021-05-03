@@ -12,8 +12,10 @@ if (escPressed && !inventoryOpen) {
 	// if the inventory is open and esc is pressed, close inventory
     } else if (escPressed && inventoryOpen) {
 		inventoryOpen = !inventoryOpen;
+		instance_destroy(oInventorySlot);
+		invSlotsDrawn = false;
 		
-	// make it so you cant shoot
+	// make it so you can shoot
 	with (oPlayer.currentWeapon) {
 		weaponIsActive = !weaponIsActive;
 	}
@@ -34,6 +36,10 @@ if (paused) {
 // open inventory
 if (tabPressed && !paused) {
 	inventoryOpen = !inventoryOpen;
+	if (instance_exists(oInventorySlot)) {
+		instance_destroy(oInventorySlot);
+	}
+	invSlotsDrawn = false;
 	
 	// make it so you cant shoot
 	with (oPlayer.currentWeapon) {

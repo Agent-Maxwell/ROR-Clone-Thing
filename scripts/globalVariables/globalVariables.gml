@@ -34,11 +34,11 @@ global.playerVariables[1, 4] = 1; //maxjumps
 // item parent
 function Item () constructor {
 	name = "";
+	slotType = "";
 	rarity = -1;
 	sprite = -1;
 	variableToChange = -1;
 	changeAmount = -1;
 	operatorType = "";
-	amount = 1;
 	description = "";
 }

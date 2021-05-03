@@ -2,22 +2,22 @@
 show_debug_message("picked up " + itemName);
 
 // apply item affects
-applyItemAffects(itemVariable, itemChangeAmount, itemOperatorType);
+//applyItemAffects(itemVariable, itemChangeAmount, itemOperatorType);
 
 // add item to inventory
- var itemAlreadyThere = false;
+var itemAlreadyThere = false;
 
-for (var i = 0; i < ds_list_size(global.inventory); i++) {
-	var myItem = global.inventory[| i];
+for (var i = 0; i < array_length(global.inventory); i++) {
 
-if (myItem.sprite == item.sprite) {
-	global.inventory[| i].amount += 1;
+if (global.inventory[i] != 0) {
+if (global.inventory[i].sprite == item.sprite) {
 	itemAlreadyThere = true;
+}
 }
 }
 
 if (!itemAlreadyThere) {
-	ds_list_add(global.inventory, item);
+	global.inventory[i] = item.sprite;
 }
 
 //destroy
