@@ -3,8 +3,9 @@ function commonScope () : Item () constructor {
 	slotType = "scope";
 	rarity = 1;
 	sprite = sWeaponPolish;
-	variableToChange = projectileSpreadAmount;
+	variableToChange = "projectileSpreadAmount";
 	changeAmount = random_range(0, .4);
 	operatorType = "-";
-	description = "Increases damage by 5 per stack.\n\nTotal damage increase:" + string(changeAmount*amount);
+	description = "A basic scope. Reduces bullet spread by " + string(changeAmount);
+	specialAttribute = noone;
 }

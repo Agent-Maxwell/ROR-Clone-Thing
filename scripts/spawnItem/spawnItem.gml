@@ -10,7 +10,7 @@ if (rarity = 1) {
 		spawnedItem = instance_create_layer(x, y - heightToAdjust, "Instances", oItem);
 		
 		with (spawnedItem) {
-			item = new weaponPolish();
+			item = new commonScope();
 		break;
 		}
 	}
@@ -23,7 +23,7 @@ if (rarity = 2) {
 		spawnedItem = instance_create_layer(x, y - heightToAdjust, "Instances", oItem);
 		
 		with (spawnedItem) {
-			item = new sugarPatch();
+			item = new unCommonScope();
 		break;
 		}
 	}
@@ -36,18 +36,22 @@ if (rarity = 3) {
 		spawnedItem = instance_create_layer(x, y - heightToAdjust, "Instances", oItem);
 		
 		with (spawnedItem) {
-			item = new angelWings();
+			item = new rareScope();
 		break;
 		}
 	}
 }
 with (spawnedItem) {
 sprite_index = item.sprite;
+itemSprite = item.sprite;
 itemName = item.name;
+itemDescription = item.description;
+itemSlotType = item.slotType;
 itemNumber = number;
 itemRarity = rarity;
 itemVariable = item.variableToChange;
 itemChangeAmount = item.changeAmount;
 itemOperatorType = item.operatorType;
+itemSpecialAttribute = item.specialAttribute;
 }
 }

@@ -1,10 +1,11 @@
-function angelWings () : Item () constructor {
-	name = "Angel Wings";
+function rareScope () : Item () constructor {
+	name = "Rare Scope";
+	slotType = "scope";
 	rarity = 3;
-	sprite = sAngelWings;
-	variableToChange = 4;
-	changeAmount = 2;
-	operatorType = "+";
-	amount = 1;
-	description = "Increases maximum airjumps by 2 per stack.\n\nTotal airjumps:" + string(changeAmount*amount);
+	sprite = sWeaponPolish;
+	variableToChange = "projectileSpreadAmount";
+	changeAmount = random_range(.8, 1);
+	operatorType = "-";
+	description = "An advanced scope. Reduces bullet spread by " + string(changeAmount);
+	specialAttribute = noone;
 }
