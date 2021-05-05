@@ -12,3 +12,4 @@ enemyFriction = 0.2;
 // other
 damaged = false;
 amountDamaged = 0;
+recentlyDamaged = false;

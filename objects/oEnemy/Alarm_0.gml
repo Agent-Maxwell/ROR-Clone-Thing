@@ -1,0 +1,1 @@
+recentlyDamaged = false;

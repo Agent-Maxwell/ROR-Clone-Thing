@@ -8,4 +8,10 @@ if (explosionRadius != -1) {
 	}
 }
 
+// set recently damaged
+with (other) {
+	recentlyDamaged = true;
+	alarm[0] = 120;
+}
+
 instance_destroy();
