@@ -4,7 +4,6 @@ show_debug_message("picked up " + itemName);
 var pickedUp = false;
 
 for (var i = 0; i < array_length(global.inventory); i++) {
-
 if (global.inventory[i, 0] = 0 && pickedUp = false) {
 	pickedUp = true;
 	
