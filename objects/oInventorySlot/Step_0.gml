@@ -2,7 +2,7 @@
 x += oPlayer.horizontalSpeed;
 y += oPlayer.verticalSpeed;
 
-
+// move items around
 if (hover && mouse_check_button_pressed(mb_left)) {
 	if (!global.mouseHasItem) {
 		global.mouseHasItem = true;

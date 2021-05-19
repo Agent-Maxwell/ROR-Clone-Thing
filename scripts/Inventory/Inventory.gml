@@ -61,4 +61,5 @@ function toggleInventory() {
 			global.mouseInventory[0, i] = 0;
 		}
 	}
+	playerStartingYPos = oPlayer.y;
 }

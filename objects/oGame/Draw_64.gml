@@ -19,4 +19,40 @@ if (inventoryOpen) {
 		}
 	}
 		invSlotsDrawn = true;
+		
+	// draw stats display
+	statsX = 900;
+	statsY = 350 + (oPlayer.y - playerStartingYPos);
+	draw_set_font(fInvFontHeader)
+	
+	draw_sprite(sStatsDisplay, 0, statsX, statsY);
+	draw_text(statsX, statsY - 120, oPlayer.currentWeapon.weaponName);
+	
+	// kind of janky but im changing the font to make the other things smaller
+	draw_set_font(fInvFont);
+	
+	draw_text(statsX, statsY - 100, "Ammo: " + string(oPlayer.currentWeapon.weaponAmmotype));
+	draw_text(statsX, statsY - 80, "Damage: " + string(oPlayer.currentWeapon.projectileDamage));
+	draw_text(statsX, statsY - 60, "Max Spread: " + string(oPlayer.currentWeapon.projectileSpreadAmount*2));
+	draw_text(statsX, statsY - 40, "Projectile Speed: " + string(oPlayer.currentWeapon.minProjectileSpeed) + "-" + string(oPlayer.currentWeapon.maxProjectileSpeed));
+	//draw_text(statsX, statsY - 120, ": " + string(oPlayer.currentWeapon.));
+	
+	// draw large weapon sprite with inventory slots
+	weaponX = 400;
+	weaponY = 400 + (oPlayer.y - playerStartingYPos);
+	weaponInvSlotsDrawn = false;
+	
+	draw_sprite(oPlayer.currentWeapon.weaponLargeSprite, 0,weaponX, weaponY);
+	
+		if (!weaponInvSlotsDrawn) {
+		for (i = 0; i < array_length(global.inventory); i++) {
+			var mySlot = instance_create_layer(oPlayer.x - 224 + (sprite_get_width(sInventorySlot) * i), oPlayer.y - 150, "Inventory", oInventorySlot);
+			
+			mySlot.slotArray = oPlayer.currentWeapon.weaponInventory;
+			mySlot.placeInArray = i;
+
+		}
+	}
+		weaponInvSlotsDrawn = true;
+	
 }
