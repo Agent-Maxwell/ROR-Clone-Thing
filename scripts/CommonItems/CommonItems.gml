@@ -1,6 +1,6 @@
 function commonScope () : Item () constructor {
 	name = "Common Scope";
-	slotType = "scope";
+	slotType = SCOPE;
 	rarity = 1;
 	sprite = sWeaponPolish;
 	variableToChange = "projectileSpreadAmount";

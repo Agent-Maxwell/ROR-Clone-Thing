@@ -40,13 +40,12 @@ if (inventoryOpen) {
 	// draw large weapon sprite with inventory slots
 	weaponX = 400;
 	weaponY = 400 + (oPlayer.y - playerStartingYPos);
-	weaponInvSlotsDrawn = false;
 	
-	draw_sprite(oPlayer.currentWeapon.weaponLargeSprite, 0,weaponX, weaponY);
+	draw_sprite(oPlayer.currentWeapon.weaponLargeSprite, 0, weaponX, weaponY);
 	
 		if (!weaponInvSlotsDrawn) {
-		for (i = 0; i < array_length(global.inventory); i++) {
-			var mySlot = instance_create_layer(oPlayer.x - 224 + (sprite_get_width(sInventorySlot) * i), oPlayer.y - 150, "Inventory", oInventorySlot);
+		for (i = 0; i < array_length(oPlayer.currentWeapon.weaponInventory); i++) {
+			var mySlot = instance_create_layer(oPlayer.currentWeapon.weaponSlotSpots[i, 0], oPlayer.currentWeapon.weaponSlotSpots[i, 1], "Inventory",  oInventorySlot);
 			
 			mySlot.slotArray = oPlayer.currentWeapon.weaponInventory;
 			mySlot.placeInArray = i;

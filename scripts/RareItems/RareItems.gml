@@ -1,6 +1,6 @@
 function rareScope () : Item () constructor {
 	name = "Rare Scope";
-	slotType = "scope";
+	slotType = SCOPE;
 	rarity = 3;
 	sprite = sWeaponPolish;
 	variableToChange = "projectileSpreadAmount";

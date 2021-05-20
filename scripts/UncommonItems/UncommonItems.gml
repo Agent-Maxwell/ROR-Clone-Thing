@@ -1,6 +1,6 @@
 function unCommonScope () : Item () constructor {
 	name = "Uncommon Scope";
-	slotType = "scope";
+	slotType = SCOPE;
 	rarity = 2;
 	sprite = sWeaponPolish;
 	variableToChange = "projectileSpreadAmount";

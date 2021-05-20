@@ -1,6 +1,5 @@
 global.inventory = array_create(8);
 
-
 // runs once to initialize the inventory as empty
 var invinit = false
 
@@ -47,6 +46,7 @@ function toggleInventory() {
 		instance_destroy(oInventorySlot);
 	}
 	invSlotsDrawn = false;
+	weaponInvSlotsDrawn = false;
 	
 	// make it so you cant shoot
 	with (oPlayer.currentWeapon) {
@@ -63,3 +63,9 @@ function toggleInventory() {
 	}
 	playerStartingYPos = oPlayer.y;
 }
+
+// weapon inventory macros
+#macro MAGAZINE 0
+#macro SCOPE 1
+#macro STOCK 2
+#macro MUZZLE 3
