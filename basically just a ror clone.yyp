@@ -34,6 +34,7 @@
     {"id":{"name":"sWeaponPolish","path":"sprites/sWeaponPolish/sWeaponPolish.yy",},"order":1,},
     {"id":{"name":"sSugarPatch","path":"sprites/sSugarPatch/sSugarPatch.yy",},"order":2,},
     {"id":{"name":"damageNumber","path":"objects/damageNumber/damageNumber.yy",},"order":13,},
+    {"id":{"name":"sRocketLauncherLarge","path":"sprites/sRocketLauncherLarge/sRocketLauncherLarge.yy",},"order":6,},
     {"id":{"name":"sprBlock","path":"sprites/sprBlock/sprBlock.yy",},"order":0,},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},"order":1,},
     {"id":{"name":"sRocket","path":"sprites/sRocket/sRocket.yy",},"order":2,},

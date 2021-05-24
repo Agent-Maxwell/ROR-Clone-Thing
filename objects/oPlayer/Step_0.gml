@@ -56,3 +56,5 @@ if (keyboard_check_pressed(ord("1"))) {
 if (keyboard_check_pressed(ord("2"))) {
 	ChangeWeapon(false, false, 2);
 }
+
+show_debug_message(currentWeapon.weaponInventory[1, 0]);

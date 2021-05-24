@@ -21,14 +21,20 @@ weaponCooldown = 0;
 
 // inventory display variables
 weaponLargeSprite = noone;
-weaponMagazineX = 0;
-weaponMagazineY = 0;
-weaponScopeX = 0;
-weaponScopeY = 0;
-weaponStockX = 0;
-weaponStockY = 0;
-weaponMuzzleX = 0;
-weaponMuzzleY = 0;
+
+weaponSlotSpots = array_create(4);
+
+weaponSlotSpots[0, 0] = 0; // magazine x
+weaponSlotSpots[0, 1] = 0; // magazine y
+						
+weaponSlotSpots[1, 0] = 0; // scope x
+weaponSlotSpots[1, 1] = 0; // scope y
+						
+weaponSlotSpots[2, 0] = 0; // stock x
+weaponSlotSpots[2, 1] = 0; // stock y
+						
+weaponSlotSpots[3, 0] = 0; // muzzle x
+weaponSlotSpots[3, 1] = 0; // muzzle y
 
 // internal weapon inventory variables
 weaponInventory = array_create(4);

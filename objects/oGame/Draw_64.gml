@@ -45,10 +45,10 @@ if (inventoryOpen) {
 	
 		if (!weaponInvSlotsDrawn) {
 		for (i = 0; i < array_length(oPlayer.currentWeapon.weaponInventory); i++) {
-			var mySlot = instance_create_layer(oPlayer.currentWeapon.weaponSlotSpots[i, 0], oPlayer.currentWeapon.weaponSlotSpots[i, 1], "Inventory",  oInventorySlot);
+			global.weaponSlotArray[@ i] = instance_create_layer(oPlayer.x + oPlayer.currentWeapon.weaponSlotSpots[i, 0], oPlayer.y + oPlayer.currentWeapon.weaponSlotSpots[i, 1], "Inventory",  oInventorySlot);
 			
-			mySlot.slotArray = oPlayer.currentWeapon.weaponInventory;
-			mySlot.placeInArray = i;
+			global.weaponSlotArray[@ i].slotArray = oPlayer.currentWeapon.weaponInventory;
+			global.weaponSlotArray[@ i].placeInArray = i;
 
 		}
 	}

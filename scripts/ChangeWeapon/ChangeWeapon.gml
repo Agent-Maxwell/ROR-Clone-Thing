@@ -1,5 +1,21 @@
 function ChangeWeapon(up, down, number){
 	
+	// if switch weapons while inv open zero out mouse inventory and destroy weapon slots
+	if (oGame.inventoryOpen) {
+		// reset mouse inv
+		for( i = 0; i < 10; i++) {
+			global.mouseInventory[0, i] = 0;
+			global.mouseItem = noone;
+			global.mouseHasItem = false;
+		}
+		// destroy active weapon slots
+		for(i = 0; i < array_length(global.weaponSlotArray); i++) {
+			instance_destroy(global.weaponSlotArray[i]);
+			global.weaponSlotArray[i] = noone;
+		}
+		oGame.weaponInvSlotsDrawn = false;
+	}
+	
 	currentListPosition = 1;
 	newListPosition = 1;
 	
