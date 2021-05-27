@@ -2,7 +2,7 @@ leftClick = mouse_check_button(mb_left);
 
 // try to shoot
 if (leftClick && canShoot && weaponIsActive) {
-	Shoot(projectileDamage, weaponAmmotype, projectileSpeedSubtractor, maxProjectileSpeed, projectileSpreadAmount, projectileKnockback, projectileExplosionRadius, projectileLifetime, projectileSprite);
+	Shoot(projectileDamage, weaponAmmotype, projectileSpeedSubtractor, maxProjectileSpeed, projectileSpreadAmount, projectileKnockback, projectileExplosionRadius, projectileLifetime, projectileSprite, itemSpeedChangeAmount, itemSpreadChangeAmount, itemKnockbackChangeAmount, itemExplosionRadiusChangeAmount, itemDamageChangeAmount);
 	alarm[0] = weaponCooldown;
 	canShoot = false;
 }

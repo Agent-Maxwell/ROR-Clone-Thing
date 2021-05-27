@@ -1,4 +1,12 @@
-function Shoot(myDamage, myAmmoType, mySpeedSubtractor, myMaxSpeed, mySpread, myKnockback, myExplosionRadius, myLifetime, mySprite){
+function Shoot(myDamage, myAmmoType, mySpeedSubtractor, myMaxSpeed, mySpread, myKnockback, myExplosionRadius, myLifetime, mySprite, mySpeedModifier, mySpreadModifier, myKnockbackModifier, myExplosionRadiusModifier, myDamageModifier){
+	
+	// modify variables
+	myDamage += myDamageModifier;
+	myMaxSpeed += mySpeedModifier;
+	mySpread += mySpreadModifier;
+	myKnockback += myKnockbackModifier;
+	myExplosionRadius += myExplosionRadiusModifier;
+
 
   newProjectile = instance_create_layer(x, y, "Instances", oProjectile);
   
@@ -6,7 +14,7 @@ function Shoot(myDamage, myAmmoType, mySpeedSubtractor, myMaxSpeed, mySpread, my
 	lifetime = myLifetime;
 	projSpeed = random_range((myMaxSpeed - mySpeedSubtractor), myMaxSpeed);
 	explosionRadius = myExplosionRadius;
-	projDamage = myDamage;
+	projDamage = myDamage + myDamageModifier;
 	projKnockback = myKnockback;
 	projSprite = mySprite;
 	projAngleOffset = random_range(mySpread*-1, mySpread);

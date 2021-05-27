@@ -10,6 +10,6 @@ draw_self()
 
 
 // display item
-if (slotArray[placeInArray, 0] != 0 && slotArray[placeInArray, 0] != noone) {
+if (slotArray[placeInArray, 3] != 0 && slotArray[placeInArray, 3] != noone) {
 	draw_sprite(slotArray[placeInArray, 3], 0, x, y);
 }

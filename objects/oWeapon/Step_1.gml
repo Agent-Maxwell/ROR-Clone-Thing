@@ -10,37 +10,104 @@ for (i = 0; i < array_length(weaponInventory); i++) {
 			var _value = weaponInventory[0, 6];
 		}
 		
+		// i have to use this disgusting mostrosity because of gamemakers refusal to let me use one variable to reference another
+		// actually the worst thing ever
 		switch weaponInventory[i, 7] {
 			case "+":
-				if (weaponInventory[0, 8]) {
-					weaponInventory[0, 4] += (weaponInventory[0, 5] * _value);
-				} else {
-					weaponInventory[0, 4] += _value;
+				switch weaponInventory[i, 4] {
+					case "itemSpeedChangeAmount":
+						if (weaponInventory[0, 8]) {
+							itemSpeedChangeAmount += (maxProjectileSpeed * _value);
+						} else {
+							itemSpeedChangeAmount += _value;
+						}
+					break
+			
+					case "itemSpreadChangeAmount":
+						if (weaponInventory[0, 8]) {
+							itemSpreadChangeAmount += (projectileSpreadAmount * _value);
+						} else {
+							itemSpreadChangeAmount += _value;
+						}
+					break
+			
+					case "itemKnockbackChangeAmount":
+						if (weaponInventory[0, 8]) {
+							itemKnockbackChangeAmount += (projectileKnockback * _value);
+						} else {
+							itemKnockbackChangeAmount += _value;
+						}
+					break
+			
+					case "itemExplosionRadiusChangeAmount":
+						if (weaponInventory[0, 8]) {
+							itemExplosionRadiusChangeAmount += (projectileExplosionRadius * _value);
+						} else {
+							itemExplosionRadiusChangeAmount += _value;
+						}
+					break
+			
+					case "itemDamageChangeAmount":
+						if (weaponInventory[0, 8]) {
+							itemDamageChangeAmount += (projectileDamage * _value);
+						} else {
+							itemDamageChangeAmount += _value;
+						}
+					break			
 				}
 			break
 				
 			case "-":
-				if (weaponInventory[0, 8]) {
-					weaponInventory[0, 4] -= (weaponInventory[0, 5] * _value);
-				} else {
-					weaponInventory[0, 4] -= _value;
+				switch weaponInventory[i, 4] {
+					case "itemSpeedChangeAmount":
+						if (weaponInventory[0, 8]) {
+							itemSpeedChangeAmount -= (maxProjectileSpeed * _value);
+						} else {
+							itemSpeedChangeAmount -= _value;
+						}
+					break
+			
+					case "itemSpreadChangeAmount":
+						if (weaponInventory[0, 8]) {
+							itemSpreadChangeAmount -= (projectileSpreadAmount * _value);
+						} else {
+							itemSpreadChangeAmount -= _value;
+						}
+					break
+			
+					case "itemKnockbackChangeAmount":
+						if (weaponInventory[0, 8]) {
+							itemKnockbackChangeAmount -= (projectileKnockback * _value);
+						} else {
+							itemKnockbackChangeAmount -= _value;
+						}
+					break
+			
+					case "itemExplosionRadiusChangeAmount":
+						if (weaponInventory[0, 8]) {
+							itemExplosionRadiusChangeAmount -= (projectileExplosionRadius * _value);
+						} else {
+							itemExplosionRadiusChangeAmount -= _value;
+						}
+					break
+			
+					case "itemDamageChangeAmount":
+						if (weaponInventory[0, 8]) {
+							itemDamageChangeAmount -= (projectileDamage * _value);
+						} else {
+							itemDamageChangeAmount -= _value;
+						}
+					break			
 				}
 			break
 				
 			case "/":
-				
-			break
 				//unused
+			break
+
 			case "*":
 				//unused
 			break
 		}
 	}
 }
-
-// modify projectile variables
-maxProjectileSpeed += itemSpeedChangeAmount;
-projectileSpreadAmount += itemSpreadChangeAmount;
-projectileKnockback += itemKnockbackChangeAmount;
-projectileExplosionRadius += itemExplosionRadiusChangeAmount;
-projectileDamage += itemDamageChangeAmount;

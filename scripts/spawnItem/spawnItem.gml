@@ -53,5 +53,7 @@ itemVariable = item.variableToChange;
 itemChangeAmount = item.changeAmount;
 itemOperatorType = item.operatorType;
 itemSpecialAttribute = item.specialAttribute;
+itemBaseVariable = item.baseVariable;
+itemPercentage = item.percentage;
 }
 }

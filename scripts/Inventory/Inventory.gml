@@ -1,3 +1,5 @@
+global.inventoryLength = 12;
+
 global.inventory = array_create(8);
 
 // runs once to initialize the inventory as empty
@@ -61,7 +63,7 @@ function toggleInventory() {
 	if (global.mouseHasItem) {
 		global.mouseHasItem = false;
 		// reset mouse inv
-		for( i = 0; i < array_length(global.mouseInventory); i++) {
+		for( i = 0; i < global.inventoryLength; i++) {
 			global.mouseInventory[0, i] = 0;
 		}
 	}
