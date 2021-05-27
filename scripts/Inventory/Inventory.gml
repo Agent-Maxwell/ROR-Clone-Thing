@@ -16,6 +16,8 @@ for (var i = 0; i < array_length(global.inventory); i++) {
 	global.inventory[i, 7] = 0;
 	global.inventory[i, 8] = 0;
 	global.inventory[i, 9] = 0;
+	global.inventory[i, 10] = 0;
+	global.inventory[i, 11] = 0;
 	
 	if (i = array_length(global.inventory)-1) {
 		invinit = true
@@ -39,6 +41,8 @@ global.mouseInventory[0, 6] = 0;
 global.mouseInventory[0, 7] = 0;
 global.mouseInventory[0, 8] = 0;
 global.mouseInventory[0, 9] = 0;
+global.mouseInventory[0, 10] = 0;
+global.mouseInventory[0, 11] = 0;
 
 function toggleInventory() {
 	inventoryOpen = !inventoryOpen;
@@ -57,7 +61,7 @@ function toggleInventory() {
 	if (global.mouseHasItem) {
 		global.mouseHasItem = false;
 		// reset mouse inv
-		for( i = 0; i < 10; i++) {
+		for( i = 0; i < array_length(global.mouseInventory); i++) {
 			global.mouseInventory[0, i] = 0;
 		}
 	}

@@ -14,7 +14,7 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 			global.mouseItem = id;
 		
 			//copy item to mouse inv
-			for( i = 0; i < 10; i++) {
+			for( i = 0; i < array_length(global.mouseInventory); i++) {
 				global.mouseInventory[@ 0, i] = slotArray[@ placeInArray, i];
 			}	
 		}
@@ -29,12 +29,12 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 				for( i = 0; i < 10; i++) {
 					global.mouseItem.slotArray[@ global.mouseItem.placeInArray, i] = slotArray[@ placeInArray, i];
 				}
-				for( i = 0; i < 10; i++) {
+				for( i = 0; i < array_length(global.mouseInventory); i++) {
 					slotArray[@ placeInArray, i] = global.mouseInventory[@ 0, i];
 				}
 		
 				// reset mouse inv
-				for( i = 0; i < 10; i++) {
+				for( i = 0; i < array_length(global.mouseInventory); i++) {
 					global.mouseInventory[@ 0, i] = 0;
 					global.mouseItem = noone;
 					global.mouseHasItem = false;
@@ -45,15 +45,15 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 		} else if (global.mouseItem.slotArray = oPlayer.currentWeapon.weaponInventory) {
 			// if we are holding an item with the correct slot type or are empty
 			if (slotArray[@ placeInArray, 1] = global.mouseInventory[@ 0, 1] || slotArray[@ placeInArray, 0] = noone|| slotArray[@ placeInArray, 0] = 0) {
-				for( i = 0; i < 10; i++) {
+				for( i = 0; i < array_length(global.mouseInventory); i++) {
 					global.mouseItem.slotArray[@ global.mouseItem.placeInArray, i] = slotArray[@ placeInArray, i];
 				}
-				for( i = 0; i < 10; i++) {
+				for( i = 0; i < array_length(global.mouseInventory); i++) {
 					slotArray[@ placeInArray, i] = global.mouseInventory[@ 0, i];
 				}
 		
 				// reset mouse inv
-				for( i = 0; i < 10; i++) {
+				for( i = 0; i < array_length(global.mouseInventory); i++) {
 					global.mouseInventory[0, i] = 0;
 					global.mouseItem = noone;
 					global.mouseHasItem = false;
@@ -63,15 +63,15 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 		} else {
 			
 		// switch items with previously clicked object
-		for( i = 0; i < 10; i++) {
+		for( i = 0; i < array_length(global.mouseInventory); i++) {
 			global.mouseItem.slotArray[@ global.mouseItem.placeInArray, i] = slotArray[@ placeInArray, i];
 		}
-		for( i = 0; i < 10; i++) {
+		for( i = 0; i < array_length(global.mouseInventory); i++) {
 			slotArray[@ placeInArray, i] = global.mouseInventory[@ 0, i];
 		}
 		
 		// reset mouse inv
-		for( i = 0; i < 10; i++) {
+		for( i = 0; i < array_length(global.mouseInventory); i++) {
 			global.mouseInventory[0, i] = 0;
 			global.mouseItem = noone;
 			global.mouseHasItem = false;

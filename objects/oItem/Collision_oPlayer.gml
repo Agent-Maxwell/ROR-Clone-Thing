@@ -13,11 +13,13 @@ if (pickedUp = false) {
 	global.inventory[@ i, 2] = itemRarity;
 	global.inventory[@ i, 3] = itemSprite;
 	global.inventory[@ i, 4] = itemVariable;
-	global.inventory[@ i, 5] = itemChangeAmount;
-	global.inventory[@ i, 6] = itemOperatorType;
-	global.inventory[@ i, 7] = itemDescription;
-	global.inventory[@ i, 8] = itemSpecialAttribute;
-	global.inventory[@ i, 9] = itemNumber;
+	global.inventory[@ i, 5] = itemBaseVariable;
+	global.inventory[@ i, 6] = itemChangeAmount;
+	global.inventory[@ i, 7] = itemOperatorType;
+	global.inventory[@ i, 8] = itemPercentage;
+	global.inventory[@ i, 9] = itemDescription;
+	global.inventory[@ i, 10] = itemSpecialAttribute;
+	global.inventory[@ i, 11] = itemNumber;
 }
 }
 }
