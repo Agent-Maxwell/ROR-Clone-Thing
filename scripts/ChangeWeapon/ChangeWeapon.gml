@@ -4,7 +4,7 @@ function ChangeWeapon(up, down, number){
 	if (oGame.inventoryOpen) {
 		// reset mouse inv
 		for( i = 0; i < global.inventoryLength; i++) {
-			global.mouseInventory[0, i] = 0;
+			global.mouseInventory[0, i] = noone;
 			global.mouseItem = noone;
 			global.mouseHasItem = false;
 		}

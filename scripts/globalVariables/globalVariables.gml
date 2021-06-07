@@ -1,12 +1,18 @@
-global.commonItemAmount = 1;
-global.uncommonItemAmount = 1;
-global.rareItemAmount = 1;
+global.commonItemAmount = 3;
+global.uncommonItemAmount = 3;
+global.rareItemAmount = 3;
 
 global.items = array_create(3, 0);
 
-global.items[1, 1] = itemsenum.weaponPolish;
-global.items[2, 1] = itemsenum.sugarPatch;
-global.items[3, 1] = itemsenum.angelWings;
+global.items[1, 1] = commonScope;
+global.items[1, 2] = commonMagazine;
+global.items[1, 3] = commonMuzzle;
+global.items[2, 1] = unCommonScope;
+global.items[2, 2] = unCommonMagazine;
+global.items[2, 3] = unCommonMuzzle;
+global.items[3, 1] = rareScope;
+global.items[3, 2] = rareMagazine;
+global.items[3, 3] = rareMuzzle;
 
 global.playerWeapons = array_create(3);
 global.playerWeapons[0, 0] = noone;
@@ -15,11 +21,6 @@ global.playerWeapons[1, 1] = true;
 global.playerWeapons[2, 0] = oRocketLauncher;
 global.playerWeapons[2, 1] = true;
 
-enum itemsenum {
-	weaponPolish,
-	sugarPatch,
-	angelWings,
-}
 
 // player variables stored here for access in itemscripts
 

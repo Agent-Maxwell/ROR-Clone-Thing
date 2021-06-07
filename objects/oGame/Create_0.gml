@@ -12,3 +12,6 @@ global.weaponSlotArray[0] = noone;
 global.weaponSlotArray[1] = noone;
 global.weaponSlotArray[2] = noone;
 global.weaponSlotArray[3] = noone;
+
+// make sure everything is randomized
+randomize();

@@ -8,18 +8,18 @@ var invinit = false
 if (!invinit) {
 for (var i = 0; i < array_length(global.inventory); i++) {
 	
-	global.inventory[i, 0] = 0;
-	global.inventory[i, 1] = 0;
-	global.inventory[i, 2] = 0;
-	global.inventory[i, 3] = 0;
-	global.inventory[i, 4] = 0;
-	global.inventory[i, 5] = 0;
-	global.inventory[i, 6] = 0;
-	global.inventory[i, 7] = 0;
-	global.inventory[i, 8] = 0;
-	global.inventory[i, 9] = 0;
-	global.inventory[i, 10] = 0;
-	global.inventory[i, 11] = 0;
+	global.inventory[i, 0] = noone;
+	global.inventory[i, 1] = noone;
+	global.inventory[i, 2] = noone;
+	global.inventory[i, 3] = noone;
+	global.inventory[i, 4] = noone;
+	global.inventory[i, 5] = noone;
+	global.inventory[i, 6] = noone;
+	global.inventory[i, 7] = noone;
+	global.inventory[i, 8] = noone;
+	global.inventory[i, 9] = noone;
+	global.inventory[i, 10] = noone;
+	global.inventory[i, 11] = noone;
 	
 	if (i = array_length(global.inventory)-1) {
 		invinit = true
@@ -33,18 +33,18 @@ global.mouseItem = noone;
 
 global.mouseInventory = array_create(1);
 
-global.mouseInventory[0, 0] = 0;
-global.mouseInventory[0, 1] = 0;
-global.mouseInventory[0, 2] = 0;
-global.mouseInventory[0, 3] = 0;
-global.mouseInventory[0, 4] = 0;
-global.mouseInventory[0, 5] = 0;
-global.mouseInventory[0, 6] = 0;
-global.mouseInventory[0, 7] = 0;
-global.mouseInventory[0, 8] = 0;
-global.mouseInventory[0, 9] = 0;
-global.mouseInventory[0, 10] = 0;
-global.mouseInventory[0, 11] = 0;
+global.mouseInventory[0, 0] = noone;
+global.mouseInventory[0, 1] = noone;
+global.mouseInventory[0, 2] = noone;
+global.mouseInventory[0, 3] = noone;
+global.mouseInventory[0, 4] = noone;
+global.mouseInventory[0, 5] = noone;
+global.mouseInventory[0, 6] = noone;
+global.mouseInventory[0, 7] = noone;
+global.mouseInventory[0, 8] = noone;
+global.mouseInventory[0, 9] = noone;
+global.mouseInventory[0, 10] = noone;
+global.mouseInventory[0, 11] = noone;
 
 function toggleInventory() {
 	inventoryOpen = !inventoryOpen;
@@ -64,7 +64,7 @@ function toggleInventory() {
 		global.mouseHasItem = false;
 		// reset mouse inv
 		for( i = 0; i < global.inventoryLength; i++) {
-			global.mouseInventory[0, i] = 0;
+			global.mouseInventory[0, i] = noone;
 		}
 	}
 	playerStartingYPos = oPlayer.y;

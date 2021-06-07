@@ -14,7 +14,7 @@ function Shoot(myDamage, myAmmoType, mySpeedSubtractor, myMaxSpeed, mySpread, my
 	lifetime = myLifetime;
 	projSpeed = random_range((myMaxSpeed - mySpeedSubtractor), myMaxSpeed);
 	explosionRadius = myExplosionRadius;
-	projDamage = myDamage + myDamageModifier;
+	projDamage = myDamage;
 	projKnockback = myKnockback;
 	projSprite = mySprite;
 	projAngleOffset = random_range(mySpread*-1, mySpread);

@@ -9,7 +9,7 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 	
 	//check if the object even has an item, if yes grab it
 	if (!global.mouseHasItem) {
-		if (slotArray[placeInArray, 0] != noone && slotArray[placeInArray, 0] != 0) {
+		if (slotArray[placeInArray, 0] != noone) {
 			global.mouseHasItem = true;
 			global.mouseItem = id;
 		
@@ -35,7 +35,7 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 		
 				// reset mouse inv
 				for( i = 0; i < global.inventoryLength; i++) {
-					global.mouseInventory[@ 0, i] = 0;
+					global.mouseInventory[@ 0, i] = noone;
 					global.mouseItem = noone;
 					global.mouseHasItem = false;
 				}
@@ -44,7 +44,7 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 		// if we are moving from a weapon inventory
 		} else if (global.mouseItem.slotArray = oPlayer.currentWeapon.weaponInventory) {
 			// if we are holding an item with the correct slot type or are empty
-			if (slotArray[@ placeInArray, 1] = global.mouseInventory[@ 0, 1] || slotArray[@ placeInArray, 0] = noone|| slotArray[@ placeInArray, 0] = 0) {
+			if (slotArray[@ placeInArray, 1] = global.mouseInventory[@ 0, 1] || slotArray[@ placeInArray, 0] = noone) {
 				for( i = 0; i < global.inventoryLength; i++) {
 					global.mouseItem.slotArray[@ global.mouseItem.placeInArray, i] = slotArray[@ placeInArray, i];
 				}
@@ -54,7 +54,7 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 		
 				// reset mouse inv
 				for( i = 0; i < global.inventoryLength; i++) {
-					global.mouseInventory[0, i] = 0;
+					global.mouseInventory[0, i] = noone;
 					global.mouseItem = noone;
 					global.mouseHasItem = false;
 				}
@@ -72,7 +72,7 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 		
 		// reset mouse inv
 		for( i = 0; i < global.inventoryLength; i++) {
-			global.mouseInventory[0, i] = 0;
+			global.mouseInventory[0, i] = noone;
 			global.mouseItem = noone;
 			global.mouseHasItem = false;
 		}

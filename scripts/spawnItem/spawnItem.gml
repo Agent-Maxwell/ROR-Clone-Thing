@@ -1,46 +1,13 @@
-
 function spawnItem(rarity, number){
 
 heightToAdjust = 40;
 
-// find which common item to spawn
-if (rarity = 1) {
-	switch (number) {
-		case 1:
-		spawnedItem = instance_create_layer(x, y - heightToAdjust, "Instances", oItem);
-		
-		with (spawnedItem) {
-			item = new commonScope();
-		break;
-		}
-	}
+spawnedItem = instance_create_layer(x, y - heightToAdjust, "Instances", oItem);
+
+with (spawnedItem) {
+	item = new global.items[rarity, number]();
 }
 
-// find which uncommon item to spawn
-if (rarity = 2) {
-	switch (number) {
-		case 1:
-		spawnedItem = instance_create_layer(x, y - heightToAdjust, "Instances", oItem);
-		
-		with (spawnedItem) {
-			item = new unCommonScope();
-		break;
-		}
-	}
-}
-
-// find which rare item to spawn
-if (rarity = 3) {
-	switch (number) {
-		case 1:
-		spawnedItem = instance_create_layer(x, y - heightToAdjust, "Instances", oItem);
-		
-		with (spawnedItem) {
-			item = new rareScope();
-		break;
-		}
-	}
-}
 with (spawnedItem) {
 sprite_index = item.sprite;
 itemSprite = item.sprite;
