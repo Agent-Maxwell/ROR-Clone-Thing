@@ -8,7 +8,7 @@ function rareScope () : Item () constructor {
 	changeAmount = random_range(60, 100); // this will be a percentage
 	operatorType = "-";
 	percentage = true;
-	description = "An advanced scope. Reduces projectile spread by " + string(changeAmount * .01) + " percent.";
+	description = "An advanced scope.\n Reduces projectile spread by \n" + string(changeAmount * .01) + " percent.";
 	specialAttribute = noone;
 }
 
@@ -22,7 +22,7 @@ function rareMagazine () : Item () constructor {
 	changeAmount = random_range(40, 90); // this will be a percentage
 	operatorType = "+";
 	percentage = true;
-	description = "An advanced magazine. Increases projectile damage by " + string(changeAmount * .01) + " percent.";
+	description = "An advanced magazine.\n Increases projectile damage by \n" + string(changeAmount * .01) + " percent.";
 	specialAttribute = noone;
 }
 
@@ -36,6 +36,6 @@ function rareMuzzle () : Item () constructor {
 	changeAmount = random_range(30, 80); // this will be a percentage
 	operatorType = "+";
 	percentage = true;
-	description = "A very nice muzzle. Increases projectile speed by " + string(changeAmount * .01) + " percent.";
+	description = "A very nice muzzle.\n Increases projectile speed by \n" + string(changeAmount * .01) + " percent.";
 	specialAttribute = noone;
 }

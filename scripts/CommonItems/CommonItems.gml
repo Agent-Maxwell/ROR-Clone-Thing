@@ -8,7 +8,7 @@ function commonScope () : Item () constructor {
 	changeAmount = random_range(10, 30); // this will be a percentage
 	operatorType = "-";
 	percentage = true;
-	description = "A basic scope. Reduces projectile spread by " + string(changeAmount * .01) + " percent.";
+	description = "A basic scope.\n Reduces projectile spread by \n" + string(changeAmount * .01) + " percent.";
 	specialAttribute = noone;
 }
 
@@ -22,7 +22,7 @@ function commonMagazine () : Item () constructor {
 	changeAmount = random_range(5, 15); // this will be a percentage
 	operatorType = "+";
 	percentage = true;
-	description = "A basic magazine. Increases projectile damage by " + string(changeAmount * .01) + " percent.";
+	description = "A basic magazine.\n Increases projectile damage by \n" + string(changeAmount * .01) + " percent.";
 	specialAttribute = noone;
 }
 
@@ -36,6 +36,6 @@ function commonMuzzle () : Item () constructor {
 	changeAmount = random_range(5, 15); // this will be a percentage
 	operatorType = "+";
 	percentage = true;
-	description = "A basic muzzle. Increases projectile speed by " + string(changeAmount * .01) + " percent.";
+	description = "A basic muzzle.\n Increases projectile speed by \n" + string(changeAmount * .01) + " percent.";
 	specialAttribute = noone;
 }

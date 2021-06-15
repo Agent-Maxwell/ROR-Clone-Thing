@@ -21,11 +21,11 @@ if (inventoryOpen) {
 		invSlotsDrawn = true;
 		
 	// draw stats display
-	statsX = 900;
-	statsY = 350 + (oPlayer.y - playerStartingYPos);
+	var statsX = 900;
+	var statsY = 350 + (oPlayer.y - playerStartingYPos);
 	draw_set_font(fInvFontHeader)
 	
-	draw_sprite(sStatsDisplay, 0, statsX, statsY);
+	createStatsDisplay(statsX, statsY, 250, 200)
 	draw_text(statsX, statsY - 120, oPlayer.currentWeapon.weaponName);
 	
 	// kind of janky but im changing the font to make the other things smaller
