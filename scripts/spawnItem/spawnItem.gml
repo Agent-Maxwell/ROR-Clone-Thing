@@ -24,3 +24,24 @@ itemBaseVariable = item.baseVariable;
 itemPercentage = item.percentage;
 }
 }
+
+function spawnSpecificItem (myX, myY, myName, mySlotType, myRarity, mySprite, myVariable, myBaseVariable, myChangeAmount, myOperatorType, myPercentage, myDescription, mySpecialAttribute, myNumber) {
+	
+	spawnedItem = instance_create_layer(myX, myY, "Instances", oItem);
+	
+	with (spawnedItem) {
+	sprite_index = mySprite;
+	itemName = myName;
+	itemSlotType = mySlotType;
+	itemRarity = myRarity;
+	itemSprite = mySprite;
+	itemVariable = myVariable;
+	itemBaseVariable = myBaseVariable;
+	itemChangeAmount = myChangeAmount;
+	itemOperatorType = myOperatorType;
+	itemPercentage = myPercentage;
+	itemDescription = myDescription;
+	itemSpecialAttribute = mySpecialAttribute;
+	itemNumber = myNumber;
+	}
+}

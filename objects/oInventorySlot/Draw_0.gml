@@ -8,15 +8,14 @@ if (hover) {
 
 draw_self()
 
-
 // display item
 if (slotArray[placeInArray, 3] != noone) {
 	
 	//make item transparent if held
 	if (global.mouseItem = id) {
-		draw_sprite_ext(slotArray[placeInArray, 3], 0, x, y, image_xscale, image_yscale,image_angle, c_white, 0.5);
+		draw_sprite_ext(slotArray[placeInArray, 3], 0, x, y, 2, 2,image_angle, c_white, 0.5);
 	} else {
-		draw_sprite(slotArray[placeInArray, 3], 0, x, y);
+		draw_sprite_ext(slotArray[placeInArray, 3], 0, x, y, 2, 2,image_angle, c_white, 1);
 	}
 	
 	glow(8, slotArray[placeInArray, 3], slotArray[placeInArray, 2], x, y);

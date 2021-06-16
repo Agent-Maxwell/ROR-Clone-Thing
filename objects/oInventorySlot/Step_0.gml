@@ -1,6 +1,6 @@
 // follow player
-x += oPlayer.horizontalSpeed;
-y += oPlayer.verticalSpeed;
+x = slotXInitial + (oPlayer.x - playerXInitial);
+y = slotYInitial + (oPlayer.y - playerYInitial);
 
 // move items around
 
@@ -54,7 +54,7 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 		
 				// reset mouse inv
 				for( i = 0; i < global.inventoryLength; i++) {
-					global.mouseInventory[0, i] = noone;
+					global.mouseInventory[@ 0, i] = noone;
 					global.mouseItem = noone;
 					global.mouseHasItem = false;
 				}
@@ -72,10 +72,11 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 		
 		// reset mouse inv
 		for( i = 0; i < global.inventoryLength; i++) {
-			global.mouseInventory[0, i] = noone;
+			global.mouseInventory[@ 0, i] = noone;
 			global.mouseItem = noone;
 			global.mouseHasItem = false;
 		}
 		}
 	}
+	
 }
