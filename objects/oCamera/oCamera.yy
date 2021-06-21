@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "sRocketLauncher",
-    "path": "sprites/sRocketLauncher/sRocketLauncher.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": true,
-  "parentObjectId": {
-    "name": "oWeapon",
-    "path": "objects/oWeapon/oWeapon.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,15 +19,17 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Weapons",
-    "path": "folders/Weapons.yy",
+    "name": "basically just a ror clone",
+    "path": "basically just a ror clone.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "oRocketLauncher",
+  "name": "oCamera",
   "tags": [],
   "resourceType": "GMObject",
 }

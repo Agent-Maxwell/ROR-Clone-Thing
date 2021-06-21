@@ -8,8 +8,9 @@ if (leftClick && canShoot && weaponIsActive) {
 }
 
 // keep on player
+ if (instance_exists(oPlayer)) {
 x = oPlayer.x;
 y = oPlayer.y;
-
 image_angle = point_direction(oPlayer.x, oPlayer.y, mouse_x, mouse_y);
 image_xscale = -1;
+ }

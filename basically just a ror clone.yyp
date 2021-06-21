@@ -14,6 +14,7 @@
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},"order":1,},
     {"id":{"name":"oDummy","path":"objects/oDummy/oDummy.yy",},"order":1,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
+    {"id":{"name":"rmMainMenu","path":"rooms/rmMainMenu/rmMainMenu.yy",},"order":1,},
     {"id":{"name":"oInventorySlot","path":"objects/oInventorySlot/oInventorySlot.yy",},"order":1,},
     {"id":{"name":"sMuzzle","path":"sprites/sMuzzle/sMuzzle.yy",},"order":5,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":0,},
@@ -36,6 +37,7 @@
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},"order":2,},
     {"id":{"name":"damageNumber","path":"objects/damageNumber/damageNumber.yy",},"order":13,},
     {"id":{"name":"sRocketLauncherLarge","path":"sprites/sRocketLauncherLarge/sRocketLauncherLarge.yy",},"order":6,},
+    {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":18,},
     {"id":{"name":"sprBlock","path":"sprites/sprBlock/sprBlock.yy",},"order":0,},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},"order":1,},
     {"id":{"name":"sRocket","path":"sprites/sRocket/sRocket.yy",},"order":2,},
@@ -46,7 +48,7 @@
     {"id":{"name":"oPistol","path":"objects/oPistol/oPistol.yy",},"order":1,},
     {"id":{"name":"sPistolLarge","path":"sprites/sPistolLarge/sPistolLarge.yy",},"order":5,},
     {"id":{"name":"fInvFont","path":"fonts/fInvFont/fInvFont.yy",},"order":3,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":1,},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -62,6 +64,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rmMainMenu","path":"rooms/rmMainMenu/rmMainMenu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [
@@ -76,6 +79,7 @@
     {"folderPath":"folders/Weapons.yy","order":14,"resourceVersion":"1.0","name":"Weapons","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Projectiles.yy","order":15,"resourceVersion":"1.0","name":"Projectiles","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/GUI.yy","order":17,"resourceVersion":"1.0","name":"GUI","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms.yy","order":19,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
