@@ -1,4 +1,4 @@
-// check if room is menu, if yes make stuff invisible
+// check if room is menu, if yes deactivate stuff
 
 if (room = rmMainMenu) {
 	instance_deactivate_object(oPlayer);

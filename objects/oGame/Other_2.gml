@@ -1,4 +1,4 @@
-// create all persistant objects and deactivate them
+// create all persistant objects
 
 instance_create_layer(x, y, "Instances", oPlayer);
 instance_create_layer(x, y, "Weapons", oPistol);
