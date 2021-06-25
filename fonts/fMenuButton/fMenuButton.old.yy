@@ -131,7 +131,7 @@
     "path": "folders/GUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "fInvFontHeader",
+  "name": "fMenuButton",
   "tags": [],
   "resourceType": "GMFont",
 }

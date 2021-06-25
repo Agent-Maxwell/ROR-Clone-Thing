@@ -31,7 +31,6 @@ global.playerVariables[1, 2] = 3.5; //walkspeed
 global.playerVariables[1, 3] = -7; //jumpheight
 global.playerVariables[1, 4] = 1; //maxjumps
 
-
 // item parent
 function Item () constructor {
 	name = "";

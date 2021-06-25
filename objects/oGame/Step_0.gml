@@ -34,12 +34,12 @@ if (tabPressed && !paused) {
 if (inventoryOpen && instance_exists(oInventorySlot)) {
 
 // drop item
-if (oInventorySlot.hover = false && mouse_check_button_pressed(mb_left) &&  global.mouseInventory[0, 0] != noone) {
+if (!position_meeting(mouse_x, mouse_y, oInventorySlot) && mouse_check_button_pressed(mb_left) &&  global.mouseInventory[0, 0] != noone) {
 	spawnSpecificItem(mouse_x, mouse_y, global.mouseInventory[0, 0], global.mouseInventory[0, 1], global.mouseInventory[0, 2], global.mouseInventory[0, 3], global.mouseInventory[0, 4], global.mouseInventory[0, 5], global.mouseInventory[0, 6], global.mouseInventory[0, 7], global.mouseInventory[0, 8], global.mouseInventory[0, 9], global.mouseInventory[0, 10], global.mouseInventory[0, 11]);
 	
 	// remove item from inventory
 	for( i = 0; i < global.inventoryLength; i++) {
-		global.mouseItem.slotArray[@ placeInArray, i] = noone;
+		global.mouseItem.slotArray[@ global.mouseItem.placeInArray, i] = noone;
 	}
 	
 	// reset mouse inv
@@ -50,3 +50,4 @@ if (oInventorySlot.hover = false && mouse_check_button_pressed(mb_left) &&  glob
 	}
 }
 }
+
