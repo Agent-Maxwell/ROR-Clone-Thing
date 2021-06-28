@@ -21,7 +21,7 @@ global.playerWeapons[1, 1] = true;
 global.playerWeapons[2, 0] = oRocketLauncher;
 global.playerWeapons[2, 1] = true;
 
-
+//these can most likely be deprecated
 // player variables stored here for access in itemscripts
 
 global.playerVariables = array_create(13);

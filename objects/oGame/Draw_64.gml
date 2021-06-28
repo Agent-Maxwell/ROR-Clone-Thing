@@ -26,15 +26,15 @@ if (inventoryOpen) {
 	draw_set_font(fInvFontHeader)
 	
 	createStatsDisplay(statsX, statsY, 250, 200)
-	draw_text(statsX, statsY - 120, oPlayer.currentWeapon.weaponName);
+	draw_text(statsX, statsY - 110, oPlayer.currentWeapon.weaponName);
 	
 	// kind of janky but im changing the font to make the other things smaller
 	draw_set_font(fInvFont);
 	
-	draw_text(statsX, statsY - 100, "Ammo: " + string(oPlayer.currentWeapon.weaponAmmotype));
-	draw_text(statsX, statsY - 80, "Damage: " + string(oPlayer.currentWeapon.projectileDamage + oPlayer.currentWeapon.itemDamageChangeAmount));
-	draw_text(statsX, statsY - 60, "Max Spread: " + string((oPlayer.currentWeapon.projectileSpreadAmount + oPlayer.currentWeapon.itemSpreadChangeAmount) *2));
-	draw_text(statsX, statsY - 40, "Projectile Speed: " + string((oPlayer.currentWeapon.maxProjectileSpeed + oPlayer.currentWeapon.itemSpeedChangeAmount) - oPlayer.currentWeapon.projectileSpeedSubtractor) + "-" + string(oPlayer.currentWeapon.maxProjectileSpeed + oPlayer.currentWeapon.itemSpeedChangeAmount));
+	draw_text(statsX, statsY - 90, "Ammo: " + string(oPlayer.currentWeapon.weaponAmmotype));
+	draw_text(statsX, statsY - 70, "Damage: " + string(oPlayer.currentWeapon.projectileDamage + oPlayer.currentWeapon.itemDamageChangeAmount));
+	draw_text(statsX, statsY - 50, "Max Spread: " + string((oPlayer.currentWeapon.projectileSpreadAmount + oPlayer.currentWeapon.itemSpreadChangeAmount) *2));
+	draw_text(statsX, statsY - 30, "Projectile Speed: " + string((oPlayer.currentWeapon.maxProjectileSpeed + oPlayer.currentWeapon.itemSpeedChangeAmount) - oPlayer.currentWeapon.projectileSpeedSubtractor) + "-" + string(oPlayer.currentWeapon.maxProjectileSpeed + oPlayer.currentWeapon.itemSpeedChangeAmount));
 	//draw_text(statsX, statsY - 120, ": " + string(oPlayer.currentWeapon.));
 	
 	// draw large weapon sprite with inventory slots

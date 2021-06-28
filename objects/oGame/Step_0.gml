@@ -3,23 +3,7 @@ tabPressed = keyboard_check_pressed(vk_tab);
 
 //pause game
 if (escPressed && !inventoryOpen) {
-	paused = !paused;
-	
-	if (paused) {
-		// create freezeframe of current room
-		if(!sprite_exists(freezeFrame)){
-        freezeFrame = sprite_create_from_surface(application_surface,0,0,RES.WIDTH,RES.HEIGHT,0,0,0,0);
-		}
-		
-		instance_deactivate_all(true);
-	} else {
-		
-		if(sprite_exists(freezeFrame)){
-			sprite_delete(freezeFrame);
-		}
-	
-		instance_activate_all();
-	}
+	togglePaused();
 
 	// if the inventory is open and esc is pressed, close inventory
     } else if (escPressed && inventoryOpen) {

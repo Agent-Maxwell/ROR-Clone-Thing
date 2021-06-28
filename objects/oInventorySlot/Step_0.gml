@@ -1,4 +1,4 @@
-// follow player
+// stay in center of screen
 x = slotXInitial + (oPlayer.x - playerXInitial);
 y = slotYInitial + (oPlayer.y - playerYInitial);
 
