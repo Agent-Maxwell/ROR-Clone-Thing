@@ -4,5 +4,7 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 		switchMenuTab(tabToSwitchTo);
 	} else if (roomToGoTo != noone) {
 		goToRoom(roomToGoTo);
+	} else if (commandToExecute != noone) {
+		commandToExecute();
 	}
 }

@@ -4,9 +4,7 @@ if (room = rmMainMenu) {
 	instance_deactivate_object(oWeapon);
 	
 	// draw initial menu
-	buttonStart = instance_create_layer(650, 250, "MenuButtons", oMenuButton);
-	buttonStart.buttonText = "Start Game";
-	buttonStart.roomToGoTo = Room1;
+	switchMenuTab("main")
 } else {
 	instance_activate_object(oPlayer);
 	instance_activate_object(oWeapon);

@@ -3,5 +3,6 @@ buttonFont = fMenuButton;
 
 tabToSwitchTo = noone;
 roomToGoTo = noone;
+commandToExecute = noone;
 
 hover = false;
