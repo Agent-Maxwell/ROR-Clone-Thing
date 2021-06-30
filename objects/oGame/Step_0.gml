@@ -34,4 +34,3 @@ if (!position_meeting(mouse_x, mouse_y, oInventorySlot) && mouse_check_button_pr
 	}
 }
 }
-

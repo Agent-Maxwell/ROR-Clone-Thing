@@ -12,6 +12,7 @@ function togglePaused() {
         oGame.freezeFrame = sprite_create_from_surface(application_surface,0,0,RES.WIDTH,RES.HEIGHT,0,0,0,0);
 		}
 		
+
 		instance_deactivate_all(true);
 		instance_activate_object(oGame);
 		
