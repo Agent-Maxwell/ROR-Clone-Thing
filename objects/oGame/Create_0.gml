@@ -1,5 +1,6 @@
 paused = false;
-freezeFrame = -1;
+freezeFrame = noone;
+freezeFrameObject = noone
 inventoryOpen = false;
 invSlotsDrawn = false;
 weaponInvSlotsDrawn = false;

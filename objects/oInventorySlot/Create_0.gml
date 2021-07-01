@@ -3,8 +3,5 @@ placeInArray = -1;
 
 hover = false;
 
-slotXInitial = x;
-slotYInitial = y;
-
-playerXInitial = oPlayer.x;
-playerYInitial = oPlayer.y;
+xOffset = 0;
+yOffset = 0;

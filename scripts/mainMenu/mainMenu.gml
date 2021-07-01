@@ -8,8 +8,8 @@ function switchMenuTab(newMenuTab){
 	}
 	
 	// for less clutter
-	var xValue = view_xport[0] + view_wport[0] * 0.5;
-	var yValue = view_yport[0] + view_hport[0] * 0.5;
+	var xValue = camera_get_view_x(view_camera[0]) + view_wport[0] * 0.5;
+	var yValue = camera_get_view_y(view_camera[0]) + view_hport[0] * 0.5;
 	
 	switch newMenuTab {
 		case "main":

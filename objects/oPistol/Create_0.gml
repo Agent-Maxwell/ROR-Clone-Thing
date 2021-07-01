@@ -32,8 +32,8 @@ weaponLargeSprite = sPistolLarge;
 
 weaponSlotSpots = array_create(4);
 
-weaponSlotSpots[0, 0] = -230; // magazine x
-weaponSlotSpots[0, 1] = -240; // magazine y
+weaponSlotSpots[0, 0] = -view_wport[0] * 0.2; // magazine x
+weaponSlotSpots[0, 1] = -view_hport[0] * 0.2; // magazine y
 
 weaponSlotSpots[1, 0] = -200; // scope x
 weaponSlotSpots[1, 1] = -390; // scope y

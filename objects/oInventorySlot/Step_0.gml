@@ -1,6 +1,6 @@
 // stay in center of screen
-x = slotXInitial + (oPlayer.x - playerXInitial);
-y = slotYInitial + (oPlayer.y - playerYInitial);
+x = camera_get_view_x(view_camera[0]) + view_wport[0] * 0.5 + xOffset;
+y = camera_get_view_y(view_camera[0]) + view_hport[0] * 0.5 + yOffset;
 
 // move items around
 

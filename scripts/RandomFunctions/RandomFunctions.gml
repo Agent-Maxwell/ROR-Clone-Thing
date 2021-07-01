@@ -27,6 +27,8 @@ function togglePaused() {
 		if(sprite_exists(oGame.freezeFrame)){
 			sprite_delete(oGame.freezeFrame);
 		}
+		
+		oGame.freezeFrameObject = noone;
 	
 		instance_activate_all();
 	}

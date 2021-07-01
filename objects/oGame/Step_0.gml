@@ -34,3 +34,12 @@ if (!position_meeting(mouse_x, mouse_y, oInventorySlot) && mouse_check_button_pr
 	}
 }
 }
+
+
+if (paused) {
+	
+	//draw freezeframe
+	if (freezeFrameObject = noone) {
+	freezeFrameObject = layer_sprite_create("Instances", camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), freezeFrame);
+	}
+}
