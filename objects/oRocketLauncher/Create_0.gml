@@ -30,17 +30,17 @@ weaponLargeSprite = sRocketLauncherLarge;
 
 weaponSlotSpots = array_create(4);
 
-weaponSlotSpots[0, 0] = -200; // magazine x
-weaponSlotSpots[0, 1] = -240; // magazine y
-
-weaponSlotSpots[1, 0] = -190; // scope x
-weaponSlotSpots[1, 1] = -350; // scope y
-
+weaponSlotSpots[0, 0] = -190; // magazine x
+weaponSlotSpots[0, 1] = 75; // magazine y
+						
+weaponSlotSpots[1, 0] = -220; // scope x
+weaponSlotSpots[1, 1] = -45; // scope y
+						
 weaponSlotSpots[2, 0] = -110; // stock x
-weaponSlotSpots[2, 1] = -300; // stock y
-
-weaponSlotSpots[3, 0] = -300; // muzzle x
-weaponSlotSpots[3, 1] = -240; // muzzle y
+weaponSlotSpots[2, 1] = 15;  // stock y
+						
+weaponSlotSpots[3, 0] = -370; // muzzle x
+weaponSlotSpots[3, 1] = 15; // muzzle y
 
 // internal weapon inventory variables
 weaponInventory = array_create(4);

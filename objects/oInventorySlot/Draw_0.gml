@@ -20,16 +20,3 @@ if (slotArray[placeInArray, 3] != noone) {
 	
 	glow(8, slotArray[placeInArray, 3], slotArray[placeInArray, 2], x, y);
 }
-
-//show item stats
-if ((hover || global.mouseItem = id) && slotArray[@ placeInArray, 0] != noone) {
-	var statsY = y + 80;
-	
-	createStatsDisplay(x, statsY, 100, 200);
-	
-	draw_set_font(fInvFontHeader)
-	draw_text(x, statsY - 40, slotArray[@ placeInArray, 0]);
-	
-	draw_set_font(fInvFont);
-	draw_text(x, statsY - 20, slotArray[@ placeInArray, 9]);
-}
