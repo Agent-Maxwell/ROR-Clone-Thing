@@ -10,11 +10,11 @@ function knockback(victim, knockbackAmount){
 	}
 
 	if ((angle > 80 && angle < 100) || (angle > 260 && angle < 280)) {
-		xAmountToMove = knockbackAmount*.8;
-		yAmountToMove = knockbackAmount;
+		xAmountToMove = knockbackAmount*.8 + random(1);
+		yAmountToMove = knockbackAmount + random(1);
 	} else {
-		xAmountToMove = knockbackAmount;
-		yAmountToMove = knockbackAmount*.8;
+		xAmountToMove = knockbackAmount + random(1);
+		yAmountToMove = knockbackAmount*.8 + random(1);
 	}
 	
 	// reverse direction if hit from other side

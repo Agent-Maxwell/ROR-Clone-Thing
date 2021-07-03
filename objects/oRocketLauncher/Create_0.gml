@@ -10,7 +10,7 @@ projectileSpeedSubtractor = 1;
 projectileSpreadAmount = 0;
 projectileKnockback = 10;
 projectileLifetime = 40;
-projectileExplosionRadius = 10;
+projectileExplosionRadius = 50;
 projectileSprite = sRocket;
 projectileDamage = 20;
 

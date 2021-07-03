@@ -2,7 +2,7 @@ escPressed = keyboard_check_pressed(vk_escape);
 tabPressed = keyboard_check_pressed(vk_tab);
 
 //pause game
-if (escPressed && !inventoryOpen) {
+if (escPressed && !inventoryOpen && room != rmMainMenu) {
 	togglePaused();
 
 	// if the inventory is open and esc is pressed, close inventory

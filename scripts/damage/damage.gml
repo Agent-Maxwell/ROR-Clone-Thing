@@ -3,5 +3,9 @@ function damage(victim, damageAmount) {
 		hp -= damageAmount;
 		damaged = true;
 		amountDamaged = damageAmount;
+		recentlyDamaged = true;
+		alarm[0] = 120;
+
+
 	}
 }
