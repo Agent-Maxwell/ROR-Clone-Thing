@@ -6,6 +6,7 @@ if (numberToWrite > 0) {
 	color = c_red;
 	ready = true;
 } else if (numberToWrite < 0) {
+	numberToWrite = abs(numberToWrite);
 	color = c_green;
 	ready = true;
 } else {

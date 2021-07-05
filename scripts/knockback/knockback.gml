@@ -28,5 +28,6 @@ function knockback(victim, knockbackAmount){
 	
 	victim.horizontalSpeed += xAmountToMove;
 	victim.verticalSpeed += yAmountToMove;
+	victim.knockedBack = true;
 
 }
