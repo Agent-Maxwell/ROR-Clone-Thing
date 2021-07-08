@@ -1,7 +1,7 @@
 // horizontal colision
-if (place_meeting(x + horizontalSpeed, y, oBlock)){
+if (place_meeting(x + horizontalSpeed, y, enemyCollision)){
 	
-	while (!place_meeting(x + sign(horizontalSpeed), y, oBlock)){
+	while (!place_meeting(x + sign(horizontalSpeed), y, enemyCollision)){
 		x = x + sign(horizontalSpeed);
 	}
 	
@@ -14,9 +14,9 @@ x = x + horizontalSpeed;
 verticalSpeed = verticalSpeed + enemyGravity;
 
 //vertical collision
-if (place_meeting(x, y + verticalSpeed, oBlock)){
+if (place_meeting(x, y + verticalSpeed, enemyCollision)){
 	
-	while (!place_meeting(x, y + sign(verticalSpeed), oBlock)){
+	while (!place_meeting(x, y + sign(verticalSpeed), enemyCollision)){
 		y = y + sign(verticalSpeed);
 	}
 	
@@ -50,16 +50,22 @@ if (knockedBack) {
 	
 	// move to player
 	if (abs(x) - abs(oPlayer.x) >= 0) {
-		//eventually replace this with rampup
-		horizontalSpeed = maxHsp;
-		facing = -1;
-	} else {
-		horizontalSpeed = maxHsp;
-		facing = 1;
-	}
 
-	//make sure were going the right direction
-	horizontalSpeed *= facing;
+		facing = -1;
+		
+		//rampup
+		if !(horizontalSpeed < -maxHsp) {
+			horizontalSpeed += speedStep * facing;
+		 }
+	} else {
+
+		facing = 1;
+		
+		//rampup
+		if !(horizontalSpeed > maxHsp) {
+			horizontalSpeed += speedStep * facing;
+		}
+	}
 }
 
 

@@ -9,8 +9,9 @@ verticalSpeed = 0;
 enemyGravity = 0.3;
 enemyFriction = 0.2;
 knockedBack = false;
-maxHsp = 3;
+maxHsp = 2.5;
 facing = 1;
+speedStep = .5;
 
 // other
 damaged = false;
