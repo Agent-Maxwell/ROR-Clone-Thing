@@ -17,3 +17,9 @@ speedStep = .5;
 damaged = false;
 amountDamaged = 0;
 recentlyDamaged = false;
+
+// attacks
+hasMeleeAttack = false;
+attackedMelee = false;
+hasProjectileAttack = false;
+attackedProjectile = false;

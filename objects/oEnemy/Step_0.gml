@@ -79,3 +79,21 @@ if (damaged) {
 	damaged = false;
 	amountDamaged = 0;
 }
+
+// attack
+
+// melee
+if (attackedMelee = false && hasMeleeAttack && point_distance(x, y, oPlayer.x, oPlayer.y) < 20) {
+	damage(oPlayer, meleeDamage);
+	attackedMelee = true;
+	alarm[1] = 30;
+}
+
+// projectile
+if (attackedProjectile = false && hasProjectileAttack) {
+	
+	Shoot(rangedDamage, noone, 8, 10, 5, 0, 0, 100, sRocket, 0, 0, 0, 0, 0);
+	
+	attackedProjectile = true;
+	alarm[2] = 30;
+}

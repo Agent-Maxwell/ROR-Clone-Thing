@@ -17,5 +17,4 @@ if (explosionRadius != -1) {
 	}
 }
 
-
 instance_destroy();

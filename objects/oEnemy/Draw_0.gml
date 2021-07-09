@@ -12,7 +12,7 @@ if (alarm[0] <= 60) {
 var myAmt = hp / maxHp;
 
 draw_set_color(c_red);
-draw_rectangle(x - 20, bbox_top - 5, (x + 20) * myAmt, bbox_top - 12, 0);
+draw_rectangle(x - 20, bbox_top - 5, (x - 20) + (40 * myAmt), bbox_top - 12, 0);
 draw_set_color(-1);
 
 // draw health bar border

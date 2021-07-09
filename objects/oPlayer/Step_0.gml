@@ -56,3 +56,14 @@ if (keyboard_check_pressed(ord("1"))) {
 if (keyboard_check_pressed(ord("2"))) {
 	ChangeWeapon(false, false, 2);
 }
+
+
+// damage numbers
+if (damaged) {
+	myDamageNumber = instance_create_layer(x, y - 50, "Instances", damageNumber);
+
+	myDamageNumber.numberToWrite = amountDamaged;
+	
+	damaged = false;
+	amountDamaged = 0;
+}

@@ -1,0 +1,1 @@
+attackedMelee = false;
