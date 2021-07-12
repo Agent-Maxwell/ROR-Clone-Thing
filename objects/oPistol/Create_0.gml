@@ -15,6 +15,7 @@ projectileLifetime = -1;
 projectileExplosionRadius = -1;
 projectileSprite = sBullet;
 projectileDamage = 5;
+projectileTarget = oEnemy;
 
 // item variables
 itemSpeedChangeAmount = 0;

@@ -6,6 +6,7 @@ projDamage = 0;
 projKnockback = 0;
 projSprite = 0;
 projAngleOffset = 0;
+projTarget = noone;
 
 // set alarm
 if (lifetime != -1) {

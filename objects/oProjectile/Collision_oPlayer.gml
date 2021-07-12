@@ -1,4 +1,7 @@
+if (projTarget = oPlayer) {
+	
+	damage(other, projDamage)
 
-damage(other, projDamage)
+	instance_destroy();
 
-instance_destroy();
+}

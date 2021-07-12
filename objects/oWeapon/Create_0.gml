@@ -13,6 +13,7 @@ projectileLifetime = -1;
 projectileExplosionRadius = -1;
 projectileSprite = 0;
 projectileDamage = 0;
+projectileTarget = 0;
 
 // item variables
 itemSpeedChangeAmount = 0;

@@ -13,6 +13,7 @@ projectileLifetime = 40;
 projectileExplosionRadius = 50;
 projectileSprite = sRocket;
 projectileDamage = 20;
+projectileTarget = oEnemy;
 
 // item variables
 itemSpeedChangeAmount = 0;

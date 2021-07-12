@@ -92,7 +92,7 @@ if (attackedMelee = false && hasMeleeAttack && point_distance(x, y, oPlayer.x, o
 // projectile
 if (attackedProjectile = false && hasProjectileAttack) {
 	
-	Shoot(rangedDamage, noone, 8, 10, 5, 0, 0, 100, sRocket, 0, 0, 0, 0, 0);
+	enemyShoot(id, oPlayer, rangedDamage, 2, 10, 5, 0, 100, sRocket);
 	
 	attackedProjectile = true;
 	alarm[2] = 30;
