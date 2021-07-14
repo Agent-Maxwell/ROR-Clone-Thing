@@ -19,7 +19,7 @@ if (inventoryOpen) {
 
 		}
 	}
-		invSlotsDrawn = true;
+	invSlotsDrawn = true;
 		
 	// draw stats display
 	var statsX = 900;

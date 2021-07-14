@@ -15,7 +15,7 @@ function switchMenuTab(newMenuTab){
 		case "main":
 			var buttonStart = instance_create_layer(xValue, yValue - 100, "MenuButtons", oMenuButton);
 			buttonStart.buttonText = "Start Game";
-			buttonStart.roomToGoTo = Room1;
+			buttonStart.roomToGoTo = lvlFloatingRock;
 	
 			var buttonOptions = instance_create_layer(xValue, yValue, "MenuButtons", oMenuButton);
 			buttonOptions.buttonText = "Options";

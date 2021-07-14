@@ -10,6 +10,7 @@
     {"id":{"name":"StatsDisplay","path":"scripts/StatsDisplay/StatsDisplay.yy",},"order":12,},
     {"id":{"name":"CommonItems","path":"scripts/CommonItems/CommonItems.yy",},"order":1,},
     {"id":{"name":"RandomFunctions","path":"scripts/RandomFunctions/RandomFunctions.yy",},"order":15,},
+    {"id":{"name":"sTeleporter","path":"sprites/sTeleporter/sTeleporter.yy",},"order":1,},
     {"id":{"name":"knockback","path":"scripts/knockback/knockback.yy",},"order":6,},
     {"id":{"name":"sChest","path":"sprites/sChest/sChest.yy",},"order":1,},
     {"id":{"name":"sPistol","path":"sprites/sPistol/sPistol.yy",},"order":2,},
@@ -21,6 +22,7 @@
     {"id":{"name":"oInventorySlot","path":"objects/oInventorySlot/oInventorySlot.yy",},"order":1,},
     {"id":{"name":"sMuzzle","path":"sprites/sMuzzle/sMuzzle.yy",},"order":5,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":0,},
+    {"id":{"name":"lvlFloatingRock","path":"rooms/lvlFloatingRock/lvlFloatingRock.yy",},"order":2,},
     {"id":{"name":"Inventory","path":"scripts/Inventory/Inventory.yy",},"order":8,},
     {"id":{"name":"RareItems","path":"scripts/RareItems/RareItems.yy",},"order":2,},
     {"id":{"name":"oContainer","path":"objects/oContainer/oContainer.yy",},"order":2,},
@@ -36,6 +38,8 @@
     {"id":{"name":"oMenuButton","path":"objects/oMenuButton/oMenuButton.yy",},"order":5,},
     {"id":{"name":"oItem","path":"objects/oItem/oItem.yy",},"order":0,},
     {"id":{"name":"sDummy","path":"sprites/sDummy/sDummy.yy",},"order":6,},
+    {"id":{"name":"oTeleporter","path":"objects/oTeleporter/oTeleporter.yy",},"order":0,},
+    {"id":{"name":"oInteractable","path":"objects/oInteractable/oInteractable.yy",},"order":2,},
     {"id":{"name":"sMagazine","path":"sprites/sMagazine/sMagazine.yy",},"order":4,},
     {"id":{"name":"damage","path":"scripts/damage/damage.yy",},"order":7,},
     {"id":{"name":"globalVariables","path":"scripts/globalVariables/globalVariables.yy",},"order":1,},
@@ -74,6 +78,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rmMainMenu","path":"rooms/rmMainMenu/rmMainMenu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"lvlFloatingRock","path":"rooms/lvlFloatingRock/lvlFloatingRock.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Player.yy","order":2,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
@@ -88,6 +93,7 @@
     {"folderPath":"folders/Projectiles.yy","order":15,"resourceVersion":"1.0","name":"Projectiles","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/GUI.yy","order":17,"resourceVersion":"1.0","name":"GUI","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms.yy","order":19,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Interactables.yy","order":21,"resourceVersion":"1.0","name":"Interactables","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

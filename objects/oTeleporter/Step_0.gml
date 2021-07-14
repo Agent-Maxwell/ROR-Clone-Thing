@@ -1,0 +1,3 @@
+if (activated) {
+	goToRoom(teleporterDestination);
+}
