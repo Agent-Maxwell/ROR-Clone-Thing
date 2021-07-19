@@ -42,3 +42,11 @@ function Item () constructor {
 	operatorType = "";
 	description = "";
 }
+
+// director macros
+enum DIRECTOR {
+	FLOATINGROCKMINX = 64,
+	FLOATINGROCKMAXX = 1950,
+	FLOATINGROCKMINY = 64,
+	FLOATINGROCKMAXY = 735
+}
