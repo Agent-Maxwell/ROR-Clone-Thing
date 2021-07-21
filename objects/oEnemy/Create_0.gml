@@ -12,6 +12,9 @@ knockedBack = false;
 maxHsp = 2.5;
 facing = 1;
 speedStep = .5;
+maxJumps = 1;
+jumps = maxJumps;
+jumpHeight = -7;
 
 // other
 damaged = false;

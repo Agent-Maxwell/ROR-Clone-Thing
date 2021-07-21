@@ -1,0 +1,1 @@
+enemySpawnCredits = 10; // can modify in creation code
