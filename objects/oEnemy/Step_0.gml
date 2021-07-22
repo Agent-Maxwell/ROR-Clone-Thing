@@ -68,7 +68,7 @@ if (knockedBack) {
 	}
 	
 	// jump
-	if (distance_to_point(oPlayer.x, y) > 25 && collision_point(x + (sprite_get_width(sprite_index) * facing), y - (sprite_get_height(sprite_index)/2), oBlock, false, true) != noone && jumps > 0 && place_meeting(x, y + 1, enemyCollision)) {
+	if (distance_to_point(oPlayer.x, y) > 25 && collision_point(x + (sprite_get_width(sprite_index) * facing), bbox_bottom, oBlock, false, true) != noone && jumps > 0 && place_meeting(x, y + 1, enemyCollision)) {
 		verticalSpeed = jumpHeight;
 		jumps--;
 	}
