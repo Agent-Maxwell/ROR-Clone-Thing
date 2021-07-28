@@ -72,16 +72,23 @@ if (knockedBack) {
 		verticalSpeed = jumpHeight;
 		jumps--;
 	}
+
+	// jump over gaps
+	if (collision_point(x + ((sprite_get_width(sprite_index)*2) * facing), bbox_bottom + 1, oBlock, false, true) = noone && oPlayer.y <= y && jumps > 0) {
+		verticalSpeed = jumpHeight;
+		jumps--;
+	}
 	
 	// reset jumps
-	if (place_meeting(x, y + 1, enemyCollision)) {
+	if (place_meeting(x, y + 1, oBlock)) {
 		jumps = maxJumps;
 	}
 	
 	// make it so enemies dont stack on eachothers heads
-	if (place_meeting(x, y - 1, oEnemy)) {
+	if (place_meeting(x, y + 1, oEnemy)) {
 		horizontalSpeed = 0;
 	}
+	
 }
 
 
