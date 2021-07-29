@@ -1,1 +1,1 @@
-enemySpawnCredits = 10; // can modify in creation code
+enemySpawnCredits = 0; // can modify in creation code

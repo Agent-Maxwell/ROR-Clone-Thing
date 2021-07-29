@@ -16,6 +16,9 @@ if (enemySpawnCredits > 0) {
 			if (collision_circle(x, y, sprite_get_height(enemy.sprite_index), enemyCollision, false, true) != noone) {
 				instance_destroy(enemy);
 				oEnemyDirector.enemySpawnCredits++;
+			} else if (distance_to_object(oPlayer) < enemy.alertDistance) {
+				instance_destroy(enemy);
+				oEnemyDirector.enemySpawnCredits++;
 			}
 		}
 	}

@@ -39,3 +39,17 @@ function unCommonMuzzle () : Item () constructor {
 	description = "A very nice muzzle.\n Increases projectile speed by \n" + string(changeAmount) + " percent.";
 	specialAttribute = noone;
 }
+
+function unCommonStock () : Item () constructor {
+	name = "Uncommon Stock";
+	slotType = STOCK;
+	rarity = 1;
+	sprite = sStock;
+	variableToChange = "itemCooldownChangeAmount";
+	baseVariable = "weaponCooldown";
+	changeAmount = random_range(20, 40); // this will be a percentage
+	operatorType = "-";
+	percentage = true;
+	description = "A very nice Stock.\n reduces weapon cooldown by \n" + string(changeAmount) + " percent.";
+	specialAttribute = noone;
+}

@@ -46,7 +46,9 @@ if (knockedBack) {
 	if (horizontalSpeed = 0 && verticalSpeed = 0) {
 		knockedBack = false;
 	}
-} else {
+	
+// move if you can see the player
+} else if (distance_to_object(oPlayer) < alertDistance){
 	
 	// move to player
 	if (abs(x) - abs(oPlayer.x) >= 0) {
@@ -80,12 +82,12 @@ if (knockedBack) {
 	}
 	
 	// reset jumps
-	if (place_meeting(x, y + 1, oBlock)) {
+	if (place_meeting(x, y + 1, enemyCollision)) {
 		jumps = maxJumps;
 	}
 	
 	// make it so enemies dont stack on eachothers heads
-	if (place_meeting(x, y + 1, oEnemy)) {
+	if (place_meeting(x, y - 1, oEnemy)) {
 		horizontalSpeed = 0;
 	}
 	

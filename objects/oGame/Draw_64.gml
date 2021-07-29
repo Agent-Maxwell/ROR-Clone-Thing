@@ -37,6 +37,7 @@ if (inventoryOpen) {
 	draw_text(statsX, statsY - 70, "Damage: " + string(oPlayer.currentWeapon.projectileDamage + oPlayer.currentWeapon.itemDamageChangeAmount));
 	draw_text(statsX, statsY - 50, "Max Spread: " + string((oPlayer.currentWeapon.projectileSpreadAmount + oPlayer.currentWeapon.itemSpreadChangeAmount) *2));
 	draw_text(statsX, statsY - 30, "Projectile Speed: " + string((oPlayer.currentWeapon.maxProjectileSpeed + oPlayer.currentWeapon.itemSpeedChangeAmount) - oPlayer.currentWeapon.projectileSpeedSubtractor) + "-" + string(oPlayer.currentWeapon.maxProjectileSpeed + oPlayer.currentWeapon.itemSpeedChangeAmount));
+	draw_text(statsX, statsY - 10, "Cooldown: " + string(oPlayer.currentWeapon.weaponCooldown + oPlayer.currentWeapon.itemCooldownChangeAmount));
 	//draw_text(statsX, statsY - 120, ": " + string(oPlayer.currentWeapon.));
 	
 	// draw large weapon sprite with inventory slots

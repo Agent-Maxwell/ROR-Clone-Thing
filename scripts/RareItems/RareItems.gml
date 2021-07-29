@@ -36,6 +36,20 @@ function rareMuzzle () : Item () constructor {
 	changeAmount = random_range(30, 80); // this will be a percentage
 	operatorType = "+";
 	percentage = true;
-	description = "A very nice muzzle.\n Increases projectile speed by \n" + string(changeAmount) + " percent.";
+	description = "An advanced muzzle.\n Increases projectile speed by \n" + string(changeAmount) + " percent.";
+	specialAttribute = noone;
+}
+
+function rareStock () : Item () constructor {
+	name = "Rare Stock";
+	slotType = STOCK;
+	rarity = 1;
+	sprite = sStock;
+	variableToChange = "itemCooldownChangeAmount";
+	baseVariable = "weaponCooldown";
+	changeAmount = random_range(40, 60); // this will be a percentage
+	operatorType = "-";
+	percentage = true;
+	description = "An advanced stock.\n reduces weapon cooldown by \n" + string(changeAmount) + " percent.";
 	specialAttribute = noone;
 }

@@ -4,6 +4,7 @@ itemSpreadChangeAmount = 0;
 itemKnockbackChangeAmount = 0;
 itemExplosionRadiusChangeAmount = 0;
 itemDamageChangeAmount = 0;
+itemCooldownChangeAmount = 0;
 
 
 // loop through all weapon inventory slots and apply their weapon change variables (if they have any)
@@ -18,7 +19,7 @@ for (i = 0; i < array_length(weaponInventory); i++) {
 			var _value = weaponInventory[i, 6];
 		}
 		
-		// i have to use this disgusting mostrosity because of gamemakers refusal to let me use one variable to reference another
+		// i have to use this disgusting monstrosity because of gamemakers refusal to let me use one variable to reference another
 		// actually the worst thing ever
 		switch weaponInventory[i, 7] {
 			case "+":
@@ -62,7 +63,15 @@ for (i = 0; i < array_length(weaponInventory); i++) {
 						} else {
 							itemDamageChangeAmount += _value;
 						}
-					break			
+					break	
+					
+					case "itemCooldownChangeAmount":
+						if (weaponInventory[i, 8]) {
+							itemCooldownChangeAmount += (weaponCooldown * _value);
+						} else {
+							itemCooldownChangeAmount += _value;
+						}
+					break		
 				}
 			break
 				
@@ -106,7 +115,15 @@ for (i = 0; i < array_length(weaponInventory); i++) {
 						} else {
 							itemDamageChangeAmount -= _value;
 						}
-					break			
+					break
+					
+					case "itemCooldownChangeAmount":
+						if (weaponInventory[i, 8]) {
+							itemCooldownChangeAmount -= (weaponCooldown * _value);
+						} else {
+							itemCooldownChangeAmount -= _value;
+						}
+					break
 				}
 			break
 				

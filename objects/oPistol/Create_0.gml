@@ -23,6 +23,7 @@ itemSpreadChangeAmount = 0;
 itemKnockbackChangeAmount = 0;
 itemExplosionRadiusChangeAmount = 0;
 itemDamageChangeAmount = 0;
+itemCooldownChangeAmount = 0;
 
 // shoot cooldown variables
 canShoot = true;

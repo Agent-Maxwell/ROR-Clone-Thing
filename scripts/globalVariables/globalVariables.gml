@@ -1,18 +1,21 @@
-global.commonItemAmount = 3;
-global.uncommonItemAmount = 3;
-global.rareItemAmount = 3;
+global.commonItemAmount = 4;
+global.uncommonItemAmount = 4;
+global.rareItemAmount = 4;
 
 global.items = array_create(3, 0);
 
 global.items[1, 1] = commonScope;
 global.items[1, 2] = commonMagazine;
 global.items[1, 3] = commonMuzzle;
+global.items[1, 4] = commonStock;
 global.items[2, 1] = unCommonScope;
 global.items[2, 2] = unCommonMagazine;
 global.items[2, 3] = unCommonMuzzle;
+global.items[2, 4] = unCommonStock;
 global.items[3, 1] = rareScope;
 global.items[3, 2] = rareMagazine;
 global.items[3, 3] = rareMuzzle;
+global.items[3, 4] = rareStock;
 
 global.playerWeapons = array_create(3);
 global.playerWeapons[0, 0] = noone;

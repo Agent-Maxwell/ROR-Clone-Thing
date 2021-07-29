@@ -1,1 +1,1 @@
-chestSpawnCredits = 10; // can modify in creation code
+chestSpawnCredits = 50; // can modify in creation code

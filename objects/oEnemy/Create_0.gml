@@ -15,6 +15,7 @@ speedStep = .5;
 maxJumps = 1;
 jumps = maxJumps;
 jumpHeight = -7;
+alertDistance = 300;
 
 // other
 damaged = false;
