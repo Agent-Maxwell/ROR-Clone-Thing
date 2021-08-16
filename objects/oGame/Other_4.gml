@@ -6,8 +6,8 @@ switch room {
 	break
 	
 	case lvlFloatingRock:
-		var playerStartX = 320;
-		var	playerStartY = 570;
+		var playerStartX = 1950;
+		var	playerStartY = 1850;
 	break
 }
 
